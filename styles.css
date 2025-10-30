@@ -1,0 +1,472 @@
+/* ================================== */
+/* 1. General & Variables             */
+/* ================================== */
+:root {
+    --primary-color: #4A90E2; /* A nice, modern blue */
+    --secondary-color: #50E3C2; /* A fresh teal/mint */
+    --text-color: #333;
+    --text-light: #777;
+    --background-color: #F4F7F6;
+    --card-background: #FFFFFF;
+    --border-color: #EAEAEA;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --border-radius: 12px;
+    --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.75rem; color: var(--text-color); }
+h3 { font-size: 1.25rem; color: var(--text-light); }
+p { margin-top: 0; }
+
+/* ================================== */
+/* 2. Layout                          */
+/* ================================== */
+.main-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1.5rem;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 2rem;
+}
+
+.selection-panel, .game-container {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.sidebar {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sidebar-content-initial {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+/* ================================== */
+/* 3. Components                      */
+/* ================================== */
+
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    margin: 3px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #f0f0f0;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+.btn-success { background-color: var(--success-color); color: white; }
+.btn-danger { background-color: var(--danger-color); color: white; }
+
+.btn-article { background-color: #6c757d; color: white; }
+.btn-article:hover { background-color: #5a6268; }
+
+.back-btn { margin-bottom: auto; }
+
+/* --- Set Selection (Index Page) --- */
+.theme-block {
+    margin-bottom: 1.5rem;
+}
+
+.theme-block h3 {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.set-card {
+    background: #f9f9f9;
+    padding: 0.75rem 1rem;
+    margin: 0.25rem 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid var(--border-color);
+}
+
+.set-card:hover {
+    background-color: #eef5ff;
+    border-color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.set-card.selected {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* --- Word List & Accordion --- */
+#setWordListContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#setWordList ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#setWordList li {
+    padding: 0.25rem 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+/* --- Flashcard --- */
+.flashcard {
+    width: 100%;
+    height: 350px;
+    perspective: 1000px;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.flashcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flashcard-front {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    box-shadow: var(--box-shadow);
+    backface-visibility: hidden;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.flashcard-front.correct { background: linear-gradient(135deg, #28a745, #20c997); }
+.flashcard-front.incorrect { background: linear-gradient(135deg, #dc3545, #fd7e14); }
+
+.flashcard-front h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.flashcard-front .instruction {
+    position: absolute;
+    bottom: 2rem;
+    opacity: 0.6;
+    font-size: 0.9rem;
+}
+
+/* --- Quiz Actions & Progress --- */
+.quiz-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+progress {
+    width: 100%;
+    height: 12px;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+    background-color: var(--border-color);
+}
+
+progress::-webkit-progress-value {
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease;
+}
+
+/* --- Sidebar Stats & Lists --- */
+.summary-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    text-align: center;
+}
+
+.summary-block {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.summary-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 0.25rem;
+}
+
+.summary-count {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.summary-count.correct { color: var(--success-color); }
+.summary-count.incorrect { color: var(--danger-color); }
+
+.wrong-list-container {
+    flex-grow: 1; /* Pushes the button to the bottom */
+}
+
+.wrong-list-container h3 {
+    margin-bottom: 0.5rem;
+}
+
+.wrong-list-container p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+#wrongWordsListContainer div {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-top: 5px;
+    padding: 0.4rem 0.6rem;
+    background: #f9f9f9;
+    border-radius: 6px;
+}
+
+/* ================================== */
+/* 4. Overview Page                   */
+/* ================================== */
+.overview-container {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.overview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.overview-header .back-btn {
+    width: auto;
+    margin: 0;
+}
+
+.overview-entry {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.overview-entry:last-child {
+    border-bottom: none;
+}
+
+.entry-grid {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 0.25rem 1.5rem;
+    align-items: center;
+}
+
+.german-word { font-size: 1.3rem; font-weight: 500; }
+.english-translation { color: var(--text-light); }
+.german-example, .english-example { font-style: italic; color: #888; font-size: 0.95rem; }
+
+.entry-audio {
+    display: flex;
+    gap: 1rem;
+    padding-left: 1.5rem;
+}
+
+.audio-btn {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.audio-btn:hover {
+    transform: scale(1.15);
+}
+
+/* ================================== */
+/* 5. NEW: Accordion Styles           */
+/* ================================== */
+.accordion-item {
+    border-bottom: 1px solid var(--border-color);
+}
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.part-of-speech-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.part-of-speech-header:hover {
+    background-color: #f9f9f9;
+}
+
+.part-of-speech-header .icon {
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.word-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding-left: 0.5rem; /* Indent the list */
+}
+
+/* Active State for Accordion */
+.accordion-item.active .part-of-speech-header {
+    color: var(--primary-color);
+}
+
+.accordion-item.active .part-of-speech-header .icon {
+    transform: rotate(45deg);
+}
+
+.accordion-item.active .word-list {
+    max-height: 1000px; /* Large enough to show all content */
+    padding-bottom: 1rem;
+    transition: max-height 0.4s ease-in;
+}
+
+
+/* ================================== */
+/* 6. NEW: AI Practice Styles         */
+/* ================================== */
+.ai-practice-container {
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+}
+
+.ai-practice-container h3 {
+    margin-bottom: 0.25rem;
+}
+
+.ai-practice-container p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.ai-practice-container textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box; /* Important for 100% width */
+    resize: vertical;
+}
+
+.ai-practice-container textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+#aiResponseBox {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    white-space: pre-wrap; /* Preserves line breaks from AI response */
+    min-height: 20px;
+    transition: background-color 0.3s;
+}
+
+#aiResponseBox.loading {
+    color: var(--text-light);
+    font-style: italic;
+}

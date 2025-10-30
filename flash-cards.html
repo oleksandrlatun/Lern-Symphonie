@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training | Flash Cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <main class="main-layout">
+            <!-- Game Content -->
+            <div class="game-container">
+                <div class="flashcard" id="flashCard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <h2 id="flashCardWord">Loading...</h2>
+                            <p class="instruction">Click to flip</p>
+                        </div>
+                    </div>
+                </div>
+                <progress id="progressBar" max="100" value="0"></progress>
+                <div class="quiz-actions">
+                    <button class="btn btn-danger" id="badBtn">I was wrong</button>
+                    <button class="btn btn-success" id="goodBtn">I was right</button>
+                </div>
+
+                <!-- NEW: AI Practice Container -->
+                <div class="ai-practice-container">
+                    <h3>Practice in a Sentence</h3>
+                    <p>Try using the current word in a German sentence.</p>
+                    <textarea id="sentenceInput" placeholder="Например: Das ist ein interessantes Buch."></textarea>
+                    <button class="btn btn-secondary" id="checkSentenceBtn">Check Sentence</button>
+                    <div id="aiResponseBox"></div>
+                </div>
+            </div>
+
+            <!-- Sidebar with Stats and Wrong Words -->
+            <aside class="sidebar">
+                <button id="back-button" class="btn btn-secondary back-btn">← Back to Sets</button>
+                <div class="summary-row">
+                    <div class="summary-block">
+                        <div class="summary-label">Correct</div>
+                        <div class="summary-count correct" id="correctCount">0</div>
+                    </div>
+                    <div class="summary-block">
+                        <div class="summary-label">Incorrect</div>
+                        <div class="summary-count incorrect" id="incorrectCount">0</div>
+                    </div>
+                </div>
+                <div class="wrong-list-container">
+                    <h3>Mistakes</h3>
+                    <p>Words you get wrong will appear here.</p>
+                    <div id="wrongWordsListContainer"></div>
+                </div>
+                <!-- UPDATED: Button for repeating mistakes -->
+                <button class="btn btn-primary" id="repeatIncorrectBtn">Repeat Wrong Cards</button>
+            </aside>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

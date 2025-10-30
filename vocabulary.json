@@ -1,0 +1,2668 @@
+{
+  "themes": [
+    {
+      "title": "Personal details",
+      "sets": [
+        {
+          "id": "set1.1",
+          "name": "Name, gender, marital status",
+          "description": "description 1",
+          "nouns": {
+            "Person": {
+              "article": "die",
+              "english": "person; people",
+              "example_de": "In unserem Haushalt leben vier Personen.",
+              "example_en": "There are four people living in our household."
+            },
+            "Name": {
+              "article": "der",
+              "english": "name",
+              "example_de": "Wie ist denn Ihr Name?",
+              "example_en": "What is your name?"
+            },
+            "Vorname": {
+              "article": "der",
+              "english": "first name",
+              "example_de": "Mein Vorname ist Elisabeth, aber alle nennen mich Lisa.",
+              "example_en": "My first name is Elisabeth but everybody calls me Lisa."
+            },
+            "Nachname": {
+              "article": "der",
+              "english": "surname, last name",
+              "example_de": "Buchstabieren Sie bitte Ihren Nachnamen.",
+              "example_en": "Spell your surname, please."
+            },
+            "Familienname": { "article": "der", "english": "surname, family name" },
+            "Frau": {
+              "article": "die",
+              "english": "woman; Mrs; Ms (title)",
+              "example_de": "Frau Richter ist verheiratet und hat zwei Kinder.",
+              "example_en": "Mrs Richter is married and has two children."
+            },
+            "Herr": {
+              "article": "der",
+              "english": "man; Mister, Mr (title)",
+              "example_de": "Herr Schneider, schön Sie zu sehen!",
+              "example_en": "Mr Schneider, good to see you!"
+            },
+            "Doppelname": {
+              "article": "der",
+              "english": "double-barrelled surname",
+              "example_de": "Ein Doppelname besteht oft aus dem Mädchennamen und dem Namen des Ehemannes, z. B. Meyer-Balm.",
+              "example_en": "A double-barrelled surname often consists of a woman's maiden name and her husband's surname, for example Meyer-Balm."
+            },
+            "Mädchenname": {
+              "article": "der",
+              "english": "maiden name",
+              "example_de": "Wie lautet Ihr Mädchenname?",
+              "example_en": "What is your maiden name?"
+            },
+            "Geschlecht": {
+              "article": "das",
+              "english": "sex; gender",
+              "example_de": "Geben Sie bitte das Geschlecht an: weiblich oder männlich.",
+              "example_en": "Give your gender, please: female or male."
+            },
+            "Mann": { "article": "der", "english": "man" },
+            "Junge": {
+              "article": "der",
+              "english": "boy",
+              "example_de": "In der Klasse sind mehr Jungen als Mädchen.",
+              "example_en": "There are more boys than girls in this class."
+            },
+            "Mädchen": {
+              "article": "das",
+              "english": "girl",
+              "example_de": "Ihr erstes Kind ist ein Mädchen.",
+              "example_en": "Their first child is a girl."
+            },
+            "Familienstand": {
+              "article": "der",
+              "english": "marital status",
+              "example_de": "Geben Sie im Formular bitte Ihren Familienstand an.",
+              "example_en": "Write your marital status on the form, please."
+            },
+            "Zivilstand": { "article": "der", "english": "marital status" },
+            "Familie": {
+              "article": "die",
+              "english": "family",
+              "example_de": "Zur Familie kann man Eltern und Kinder oder auch die gesamte Verwandtschaft zählen.",
+              "example_en": "You can regard parents and children or all relatives as belonging to the family."
+            },
+            "Kind": {
+              "article": "das",
+              "english": "child",
+              "example_de": "Die Eltern freuen sich auf ihr zweites Kind.",
+              "example_en": "The parents are looking forward to their second child."
+            },
+            "Ehepaar": { "article": "das", "english": "married couple" },
+            "Ehemann": {
+              "article": "der",
+              "english": "husband",
+              "example_de": "Mein (Ehe-)Mann kümmert sich um den Haushalt und die Kinder, wenn ich arbeite.",
+              "example_en": "My husband looks after the household and the children if I am working."
+            },
+            "Ehefrau": {
+              "article": "die",
+              "english": "wife",
+              "example_de": "Arbeitet deine (Ehe-)Frau noch bei der Zeitung?",
+              "example_en": "Does your wife still work at the newspaper?"
+            },
+            "Partner": {
+              "article": "der",
+              "english": "partner",
+              "example_de": "Meine Schwester lebt mit ihrem Partner in Berlin.",
+              "example_en": "My sister lives with her partner in Berlin."
+            },
+            "Partnerin": { "article": "die", "english": "partner" },
+            "Scheidung": {
+              "article": "die",
+              "english": "divorce",
+              "example_de": "Sie leben in Scheidung.",
+              "example_en": "They are separated."
+            },
+            "Single": {
+              "article": "der",
+              "english": "single",
+              "example_de": "Manche Singles hätten lieber einen Partner oder eine Partnerin.",
+              "example_en": "Some singles would rather have a partner."
+            },
+            "Lebensgefährte": {
+              "article": "der",
+              "english": "common-law husband",
+              "example_de": "Nach der Scheidung hat sie einen neuen Lebensgefährten gefunden.",
+              "example_en": "She has found a new common-law husband after the divorce."
+            },
+            "Lebensgefährtin": { "article": "die", "english": "common-law wife" },
+            "Witwer": {
+              "article": "der",
+              "english": "widower",
+              "example_de": "Er wurde früh Witwer, seine Frau starb sehr jung.",
+              "example_en": "He became a widower early, his wife died very young."
+            },
+            "Witwe": { "article": "die", "english": "widow" }
+          },
+          "adjectives": {
+            "umgekehrt": {
+              "english": "reverse",
+              "example_de": "Soll ich erst den Vornamen und dann den Nachnamen angeben? – Nein, in umgekehrter Reihenfolge.",
+              "example_en": "Should I first give the first name and then the surname? – No, in reverse order."
+            },
+            "männlich": { "english": "male" },
+            "weiblich": { "english": "female" },
+            "ledig": {
+              "english": "single; unmarried",
+              "example_de": "Sind Sie verheiratet oder ledig?",
+              "example_en": "Are you married or single?"
+            },
+            "verheiratet": {
+              "english": "married",
+              "example_de": "Die beiden sind glücklich verheiratet.",
+              "example_en": "They are both happily married."
+            },
+            "geschieden": {
+              "english": "divorced",
+              "example_de": "Seit ich geschieden bin, trage ich wieder meinen Mädchennamen.",
+              "example_en": "Since I have been divorced, I go by my maiden name again."
+            },
+            "alleinstehend": {
+              "english": "single; unmarried",
+              "example_de": "Die Frau ist alleinstehend, sie lebt allein.",
+              "example_en": "The woman is single, she lives alone."
+            },
+            "kinderlos": { "english": "childless" },
+            "verwitwet": { "english": "widowed" }
+          },
+          "verbs": {
+            "heißen": {
+              "english": "be called",
+              "example_de": "Wie heißen Sie?",
+              "example_en": "What is your name?"
+            },
+            "sich vorstellen": {
+              "english": "introduce oneself",
+              "example_de": "Darf ich mich vorstellen?",
+              "example_en": "May I introduce myself?"
+            },
+            "sein": {
+              "english": "be",
+              "example_de": "Hallo, ich bin Martina Römer.",
+              "example_en": "Hello, I am Martina Römer."
+            },
+            "nennen": {
+              "english": "state",
+              "example_de": "Bitte nennen Sie Ihren vollständigen Namen.",
+              "example_en": "Please state your full name."
+            },
+            "geboren": {
+              "english": "born, née",
+              "example_de": "Frau Ilka Schneider, geborene Giese.",
+              "example_en": "Mrs Ilka Schneider, née Giese."
+            },
+            "heiraten": {
+              "english": "marry, get married",
+              "example_de": "Das Paar ist seit einem Jahr verlobt, nächstes Jahr wollen sie heiraten.",
+              "example_en": "The couple have been engaged for a year, they want to get married next year."
+            },
+            "getrennt leben": {
+              "english": "live apart",
+              "example_de": "Mark und Susanne leben getrennt, sie lassen sich scheiden.",
+              "example_en": "Mark and Susanne are living apart, they are getting a divorce."
+            },
+            "sich scheiden lassen": { "english": "get a divorce, get divorced" }
+          }
+        },
+        {
+          "id": "set1.2",
+          "name": "Age, place of residence, origin",
+          "description": "description 1",
+          "nouns": {
+            "Alter": {
+              "article": "das",
+              "english": "age; old age",
+              "example_de": "Bis ins hohe Alter fuhr er Auto.",
+              "example_en": "He was driving until he reached a ripe old age."
+            },
+            "Geburtsdatum": {
+              "article": "das",
+              "english": "date of birth",
+              "example_de": "Ihr Geburtsdatum ist der 5. Juni 1978.",
+              "example_en": "Her date of birth is the 5th of June, 1978."
+            },
+            "Geburtstag": {
+              "article": "der",
+              "english": "birthday",
+              "example_de": "Heute hat meine Schwester Geburtstag. Herzlichen Glückwunsch zum Geburtstag!",
+              "example_en": "It is my sister's birthday today. Happy Birthday!"
+            },
+            "Wohnsitz": {
+              "article": "der",
+              "english": "domicile",
+              "example_de": "Sein erster Wohnsitz ist Stuttgart, sein zweiter Hamburg.",
+              "example_en": "His first domicile is Stuttgart, his second domicile is Hamburg."
+            },
+            "Wohnort": {
+              "article": "der",
+              "english": "place of residence",
+              "example_de": "Geben Sie im Formular bitte Ihren Wohnort an!",
+              "example_en": "Write your place of residence on the form, please!"
+            },
+            "Adresse": {
+              "article": "die",
+              "english": "address",
+              "example_de": "Meine Adresse lautet: Goethestr. 73, 10623 Berlin.",
+              "example_en": "My address is: Goethestr. 73, 10623 Berlin."
+            },
+            "Stadt": {
+              "article": "die",
+              "english": "town, city",
+              "example_de": "Zum Arbeiten ziehen manche Menschen in eine andere Stadt.",
+              "example_en": "Some people move to another town to work."
+            },
+            "Straße": { "article": "die", "english": "street" },
+            "Platz": {
+              "article": "der",
+              "english": "square",
+              "example_de": "Wohnst du in der Körnerstraße? – Nein, am Körnerplatz.",
+              "example_en": "Do you live in Körnerstraße? – No, in Körnerplatz."
+            },
+            "Hausnummer": {
+              "article": "die",
+              "english": "house number",
+              "example_de": "Bitte bei der Adresse die Hausnummer nicht vergessen!",
+              "example_en": "Do not forget the house number in your address, please!"
+            },
+            "Geburtsort": {
+              "article": "der",
+              "english": "place of birth",
+              "example_de": "Sie ist in Deutschland geboren, ihr Geburtsort ist München.",
+              "example_en": "She was born in Germany, her place of birth is Munich."
+            },
+            "Heimat": {
+              "article": "die",
+              "english": "home country",
+              "example_de": "Schweden ist seine zweite Heimat.",
+              "example_en": "Sweden is his second home country."
+            },
+            "Herkunft": {
+              "article": "die",
+              "english": "origin; descent",
+              "example_de": "Yuna wird oft nach ihrer Herkunft gefragt.",
+              "example_en": "Yuna is often asked about her ethnic origin."
+            },
+            "Ausland": {
+              "article": "das",
+              "english": "abroad",
+              "example_de": "Tibor ist beruflich oft im Ausland.",
+              "example_en": "Tibor’s work often takes him abroad."
+            },
+            "Staatsangehörigkeit": {
+              "article": "die",
+              "english": "nationality",
+              "example_de": "Suna besitzt die deutsche Staatsangehörigkeit.",
+              "example_en": "Suna has the German nationality."
+            },
+            "Nationalität": { "article": "die", "english": "nationality" },
+            "Ausländer": {
+              "article": "der",
+              "english": "foreigner",
+              "example_de": "In Deutschland leben ca. 9,11 Mio. Ausländer.",
+              "example_en": "Approximately 9.11 million foreigners live in Germany (as of 2015)."
+            },
+            "Ausländerin": { "article": "die", "english": "foreigner" },
+            "Migrant": {
+              "article": "der",
+              "english": "migrant",
+              "example_de": "Der Zugang zum Arbeitsmarkt ist für Migranten teilweise schwierig.",
+              "example_en": "Migrants sometimes find it difficult to enter the job market."
+            },
+            "Migrantin": { "article": "die", "english": "migrant" },
+            "Migration": {
+              "article": "die",
+              "english": "migration",
+              "example_de": "Migration ist ein häufig diskutiertes Thema.",
+              "example_en": "Migration is an issue that is frequently discussed."
+            },
+            "Integration": {
+              "article": "die",
+              "english": "integration",
+              "example_de": "Die Integration ausländischer Mitbürger ist dem Bürgermeister besonders wichtig.",
+              "example_en": "The integration of foreign citizens is an issue close to the mayor's heart."
+            },
+            "Asyl": {
+              "article": "das",
+              "english": "asylum",
+              "example_de": "Menschen, die politisch verfolgt werden, können Asyl beantragen.",
+              "example_en": "People who are persecuted can apply for asylum."
+            },
+            "Flüchtling": {
+              "article": "der",
+              "english": "refugee",
+              "example_de": "Flüchtlinge kommen oft aus Kriegs- und Krisengebieten.",
+              "example_en": "Refugees often come from war and crisis zones."
+            },
+            "Asylant": { "article": "der", "english": "asylum-seeker" },
+            "Asylantin": { "article": "die", "english": "asylum-seeker" }
+          },
+          "adjectives": {
+            "alt": {
+              "english": "old",
+              "example_de": "Wie alt sind Sie? – Ich bin 26 Jahre alt.",
+              "example_en": "How old are you? – I am 26 years old."
+            },
+            "jung": { "english": "young" },
+            "volljährig": {
+              "english": "of age, adult, grown-up",
+              "example_de": "In Deutschland ist man mit 18 Jahren volljährig.",
+              "example_en": "You are of age when you turn 18 in Germany."
+            },
+            "minderjährig": {
+              "english": "minor, underage",
+              "example_de": "Eltern mit minderjährigen Kindern erhalten Kindergeld.",
+              "example_en": "Parents with underaged children receive child benefit."
+            },
+            "fremd": {
+              "english": "strange; foreign",
+              "example_de": "Nach seinem Umzug fühlte er sich lange Zeit fremd.",
+              "example_en": "After his move he feels like a foreigner for a long time."
+            },
+            "ausländisch": { "english": "foreign" },
+            "interkulturell": {
+              "english": "intercultural",
+              "example_de": "Unser Viertel ist durch sein interkulturelles Umfeld geprägt.",
+              "example_en": "Our neighbourhood is characterized by its intercultural environment."
+            },
+            "gebürtig": {
+              "english": "by birth, native (of)",
+              "example_de": "Er lebt seit Jahrzehnten in Deutschland, ist aber gebürtiger Franzose.",
+              "example_en": "He has lived in Germany for decades but he is French by birth."
+            }
+          },
+          "verbs": {
+            "wohnen": {
+              "english": "live",
+              "example_de": "Er wohnt in Mannheim bei Verwandten.",
+              "example_en": "He lives with relatives in Mannheim."
+            },
+            "leben": {
+              "english": "live",
+              "example_de": "Wir haben lange im Ausland gelebt.",
+              "example_en": "We lived abroad for a long time."
+            },
+            "stammen": {
+              "english": "come (from)",
+              "example_de": "Maria stammt aus Spanien.",
+              "example_en": "Maria comes from Spain."
+            },
+            "auswandern": {
+              "english": "emigrate",
+              "example_de": "Um 1850 wanderten viele Deutsche nach Amerika aus.",
+              "example_en": "Many Germans emigrated to America around 1850."
+            },
+            "einwandern": { "english": "immigrate, migrate" },
+            "sich aufhalten": {
+              "english": "stay",
+              "example_de": "Magdalena hält sich gerade im Ausland auf.",
+              "example_en": "Magdalena is staying abroad at the moment."
+            },
+            "sich integrieren": {
+              "english": "integrate",
+              "example_de": "Sahid lebt zwar erst seit kurzem in Deutschland, er integriert sich aber bereits sehr gut.",
+              "example_en": "Sahid has only been living in Germany for a short while, but he has integrated very well."
+            },
+            "integrieren": {
+              "english": "integrate",
+              "example_de": "In unserer Klasse werden neue Schüler schnell integriert.",
+              "example_en": "New students are quickly integrated into our class."
+            },
+            "fliehen": {
+              "english": "escape; flee",
+              "example_de": "Im Krieg fliehen viele Menschen ins Ausland.",
+              "example_en": "Many people escape abroad during a war."
+            }
+          },
+          "adverbs": {
+            "woher": {
+              "english": "where from",
+              "example_de": "Woher kommen Sie?",
+              "example_en": "Where are you from?"
+            },
+            "aus": {
+              "english": "from",
+              "example_de": "Nezar kommt aus Jordanien.",
+              "example_en": "Nezar comes from Jordan."
+            }
+          },
+          "expressions": {
+            "eine neue Heimat finden": { "english": "find a new home" }
+          }
+        },
+        {
+          "id": "set1.3",
+          "name": "Documents and forms",
+          "description": "description 1",
+          "nouns": {
+            "Pass": {
+              "article": "der",
+              "english": "passport",
+              "example_de": "Bei der Einreise musste er seinen Pass vorlegen.",
+              "example_en": "He had to present his passport on entering the country."
+            },
+            "Ausweis": {
+              "article": "der",
+              "english": "ID card, identity card",
+              "example_de": "einen Ausweis beantragen",
+              "example_en": "to apply for an ID card"
+            },
+            "Personalien": {
+              "article": "die",
+              "english": "personal details",
+              "example_de": "Bei Polizeikontrollen werden die Personalien festgestellt.",
+              "example_en": "During police checks, personal details are verified."
+            },
+            "Papiere": {
+              "article": "die",
+              "english": "(identity) papers",
+              "example_de": "Auf Ämtern muss man seine Papiere vorzeigen.",
+              "example_en": "You have to show your identity papers at government offices."
+            },
+            "Mappe": {
+              "article": "die",
+              "english": "folder, file",
+              "example_de": "Ich habe die Mappe mit meinen Papieren zu Hause liegen lassen.",
+              "example_en": "I have left the folder with my identity papers at home."
+            },
+            "Dokument": {
+              "article": "das",
+              "english": "document",
+              "example_de": "Zu den wichtigen Dokumenten jeder Person gehört die Geburtsurkunde.",
+              "example_en": "The birth certificate is a very important document for everyone."
+            },
+            "Zeugnis": { "article": "das", "english": "report" },
+            "Unterlagen": {
+              "article": "die",
+              "english": "documents",
+              "example_de": "Ich kann die Unterlagen zum Fall „Mayer“ nicht finden.",
+              "example_en": "I cannot find the documents for the \"Mayer\" case."
+            },
+            "Führerschein": {
+              "article": "der",
+              "english": "driving licence (BE), driver's license (AE)",
+              "example_de": "Autofahren ist nur mit gültigem Führerschein gestattet.",
+              "example_en": "It is only permitted to drive a car with a valid driving licence."
+            },
+            "Führerausweis": { "article": "der", "english": "driving licence (BE), driver's license (AE)" },
+            "Visum": {
+              "article": "das",
+              "english": "visa",
+              "example_de": "Für die Einreise benötigen Sie ein Visum.",
+              "example_en": "You need a visa to enter the country."
+            },
+            "Arbeitserlaubnis": {
+              "article": "die",
+              "english": "work permit",
+              "example_de": "Die Arbeitserlaubnis ist abgelaufen.",
+              "example_en": "The work permit has expired."
+            },
+            "Genehmigung": {
+              "article": "die",
+              "english": "permission, permit",
+              "example_de": "Haben Sie eine Aufenthaltsgenehmigung?",
+              "example_en": "Have you got a residence permit?"
+            },
+            "Geburtsurkunde": {
+              "article": "die",
+              "english": "birth certificate",
+              "example_de": "Die Standesämter stellen eine Geburtsurkunde aus.",
+              "example_en": "The registry offices issue birth certificates in Germany, Austria and Switzerland."
+            },
+            "Heiratsurkunde": { "article": "die", "english": "marriage certificate (BE), marriage license (AE)" },
+            "Aufenthaltserlaubnis": {
+              "article": "die",
+              "english": "residence permit",
+              "example_de": "Ausländer, die nicht aus Ländern der Europäischen Union stammen, benötigen eine Aufenthaltserlaubnis.",
+              "example_en": "Foreigners who do not come from countries of the European Union need a residence permit in Germany."
+            },
+            "Formular": { "article": "das", "english": "form" },
+            "Antrag": {
+              "article": "der",
+              "english": "application",
+              "example_de": "Kerstins Antrag für ein Stipendium wurde abgelehnt.",
+              "example_en": "Kerstin's application for a scholarship has been refused."
+            },
+            "Ausstellung": {
+              "article": "die",
+              "english": "issuing",
+              "example_de": "Die Ausstellung des Visums kann zwei Monate dauern.",
+              "example_en": "The issuing of a visa can take two months."
+            },
+            "Anmeldung": {
+              "article": "die",
+              "english": "registration",
+              "example_de": "Bitte gehen Sie erst zur Anmeldung im Erdgeschoss.",
+              "example_en": "Please go first to registration on the ground floor."
+            },
+            "Bescheid": {
+              "article": "der",
+              "english": "notification",
+              "example_de": "Hast du vom Finanzamt schon einen Bescheid erhalten?",
+              "example_en": "Have you already received a notification from the tax office?"
+            },
+            "Unterschrift": {
+              "article": "die",
+              "english": "signature",
+              "example_de": "Der Antrag ist ohne Unterschrift nicht gültig.",
+              "example_en": "The application is not valid without a signature."
+            },
+            "Lebenslauf": {
+              "article": "der",
+              "english": "curriculum vitae (CV), résumé",
+              "example_de": "Zu einer vollständigen Bewerbung gehört ein Lebenslauf.",
+              "example_en": "A complete application includes a curriculum vitae."
+            },
+            "Beruf": {
+              "article": "der",
+              "english": "occupation; job",
+              "example_de": "Was sind Sie von Beruf? – Ich bin Lehrerin.",
+              "example_en": "What is your occupation? – I am a teacher."
+            },
+            "Angabe": {
+              "article": "die",
+              "english": "detail",
+              "example_de": "Ich benötige noch nähere Angaben zu Ihrer Person.",
+              "example_en": "I need some more details about you."
+            }
+          },
+          "adjectives": {
+            "gültig": {
+              "english": "valid",
+              "example_de": "Mein Reisepass ist bis September 2018 gültig.",
+              "example_en": "My passport is valid until September 2018."
+            },
+            "ungültig": { "english": "invalid, void" },
+            "persönlich": {
+              "english": "personal",
+              "example_de": "Geburtsdatum und Adresse gehören zu den persönlichen Daten.",
+              "example_en": "Personal details include date of birth and address."
+            }
+          },
+          "verbs": {
+            "ablaufen": {
+              "english": "expire",
+              "example_de": "Der Pass ist abgelaufen.",
+              "example_en": "The passport has expired."
+            },
+            "verlängern": {
+              "english": "renew",
+              "example_de": "Die Behörde verlängert das Visum für sechs Monate.",
+              "example_en": "The department renews the visa for six months."
+            },
+            "ausstellen": {
+              "english": "issue",
+              "example_de": "In dringenden Fällen werden vorläufige Reisepässe ausgestellt.",
+              "example_en": "Temporary passports are issued in emergencies."
+            },
+            "anerkennen": {
+              "english": "recognize",
+              "example_de": "Sein Abschluss wird in der Schweiz nicht anerkannt.",
+              "example_en": "His qualification is not recognized in Switzerland."
+            },
+            "ausfüllen": { "english": "fill in" },
+            "ankreuzen": {
+              "english": "mark sth with a cross",
+              "example_de": "Kreuzen Sie an, was für Sie zutrifft.",
+              "example_en": "Please mark with a cross what applies to you."
+            },
+            "beantragen": {
+              "english": "apply for",
+              "example_de": "Für die Reise nach Indien müssen Sie ein Visum beantragen.",
+              "example_en": "You have to apply for a visa for the trip to India."
+            },
+            "benötigen": { "english": "require" },
+            "sich anmelden": {
+              "english": "register",
+              "example_de": "Sie müssen sich rechtzeitig beim Einwohnermeldeamt anmelden.",
+              "example_en": "You must register your new address in good time at the residents' registration office."
+            },
+            "anmelden": {
+              "english": "register",
+              "example_de": "Lara hat ihren Mann gestern für einen Kurs an der Volkshochschule angemeldet.",
+              "example_en": "Lara registered her husband for an adult evening class yesterday."
+            },
+            "buchstabieren": {
+              "english": "spell",
+              "example_de": "Könnten Sie Ihren Namen bitte buchstabieren?",
+              "example_en": "Can you spell your name, please?"
+            },
+            "unterschreiben": {
+              "english": "sign",
+              "example_de": "Unterschreiben Sie hier bitte das Formular!",
+              "example_en": "Please sign the form here!"
+            },
+            "angeben": {
+              "english": "give",
+              "example_de": "Vergessen Sie nicht, Ihre Adresse anzugeben.",
+              "example_en": "Do not forget to give your address."
+            }
+          },
+          "phrases": {
+            "die Personalien aufnehmen": { "english": "take down particulars" }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Daily activities",
+      "sets": [
+        {
+          "id": "set2.1",
+          "name": "Proceeding through the day",
+          "description": "General daily activities and movements.",
+          "nouns": {
+            "Tagesablauf": {
+              "article": "der",
+              "english": "daily routine",
+              "example_de": "Beschreiben Sie bitte Ihren Tagesablauf.",
+              "example_en": "Please describe your daily routine."
+            },
+            "Alltag": {
+              "article": "der",
+              "english": "everyday life",
+              "example_de": "Sie findet ihren Alltag langweilig.",
+              "example_en": "She finds her everyday life boring."
+            },
+            "Gewohnheit": {
+              "article": "die",
+              "english": "habit",
+              "example_de": "Er hat die Gewohnheit, immer spät ins Bett zu gehen.",
+              "example_en": "He has the habit of always going to bed late."
+            },
+            "Regel": {
+              "article": "die",
+              "english": "rule",
+              "example_de": "In der Regel gehen wir gegen 23 Uhr ins Bett.",
+              "example_en": "As a general rule we go to bed around 11 p.m."
+            },
+            "Bewegung": {
+              "article": "die",
+              "english": "movement; exercise",
+              "example_de": "Er lebt sehr gesund; er hat jeden Tag viel Bewegung an der frischen Luft.",
+              "example_en": "He leads a very healthy life; he exercises every day in the fresh air."
+            }
+          },
+          "verbs": {
+            "sich gewöhnen": {
+              "english": "get used to",
+              "example_de": "Ich gewöhne mich nur langsam an das scharfe Essen in Mexiko.",
+              "example_en": "I am only slowly getting used to the hot food in Mexico."
+            },
+            "bewegen": {
+              "english": "move",
+              "example_de": "Er hat sich am Arm verletzt; er kann ihn nicht mehr bewegen.",
+              "example_en": "He has hurt his arm; he cannot move it anymore."
+            },
+            "sich bewegen": {
+              "english": "exercise",
+              "example_de": "Wenn du abnehmen willst, musst du dich mehr bewegen.",
+              "example_en": "If you want to lose weight, you must exercise."
+            },
+            "gehen": {
+              "english": "go (by foot); walk; move",
+              "example_de": "Die Kinder gehen jeden Morgen zur Schule.",
+              "example_en": "The children go to school every morning."
+            },
+            "treten": {
+              "english": "step; kick",
+              "example_de": "So ein Mist! Ich bin in einen Kaugummi getreten.",
+              "example_en": "Damn! I stepped in chewing gum."
+            },
+            "laufen": {
+              "english": "walk; run",
+              "example_de": "Er läuft jeden Tag eine Stunde im Wald.",
+              "example_en": "He runs in the forest for an hour every day."
+            },
+            "spazieren gehen": {
+              "english": "go for a walk",
+              "example_de": "Wir gehen mit unserem Hund dreimal am Tag spazieren.",
+              "example_en": "We go for a walk with our dog three times a day."
+            },
+            "verlassen": {
+              "english": "leave",
+              "example_de": "Sie hat ihre Wohnung verlassen.",
+              "example_en": "She left her flat."
+            },
+            "rennen": {
+              "english": "run",
+              "example_de": "Er musste rennen, um den Bus noch zu kriegen.",
+              "example_en": "He had to run to catch the bus."
+            },
+            "folgen": {
+              "english": "follow",
+              "example_de": "Das Kind folgt seiner Mutter überall hin.",
+              "example_en": "The child follows her / his mother everywhere."
+            },
+            "kommen": {
+              "english": "come",
+              "example_de": "Mein Mann kommt meistens gegen 19 Uhr nach Hause.",
+              "example_en": "My husband usually comes home around 7 p.m."
+            },
+            "drehen": {
+              "english": "turn",
+              "example_de": "Sie dreht den Kopf zur Seite.",
+              "example_en": "She turns her head to the side."
+            },
+            "sich umdrehen": {
+              "english": "turn around",
+              "example_de": "Sie dreht sich um, um ihren Mann anzuschauen.",
+              "example_en": "She turns around to look at her husband."
+            },
+            "fallen": {
+              "english": "fall",
+              "example_de": "Das Messer ist auf den Boden gefallen.",
+              "example_en": "The knife fell on the floor."
+            },
+            "stürzen": {
+              "english": "fall over",
+              "example_de": "Tim ist gestürzt und hat sich am Knie verletzt.",
+              "example_en": "Tim has fallen over and hurt his knee."
+            },
+            "heben": {
+              "english": "lift",
+              "example_de": "Können Sie mir helfen, die Kiste zu heben?",
+              "example_en": "Could you please help me to lift the box?"
+            },
+            "aufheben": {
+              "english": "pick up",
+              "example_de": "Heb deine Spielsachen auf!",
+              "example_en": "Pick up your toys!"
+            },
+            "halten": {
+              "english": "hold",
+              "example_de": "Kannst du mal kurz meine Jacke halten?",
+              "example_en": "Can you hold my jacket for a minute, please?"
+            },
+            "festhalten": {
+              "english": "hold on (to)",
+              "example_de": "Carmen hält ihre Freundin am Arm fest.",
+              "example_en": "Carmen holds on to her friend's arm."
+            },
+            "greifen": {
+              "english": "grab; grasp",
+              "example_de": "Babys greifen oft nach bunten Gegenständen.",
+              "example_en": "Babies often grab at brightly coloured objects."
+            },
+            "stehen": {
+              "english": "stand",
+              "example_de": "Sie steht an der Tür.",
+              "example_en": "She is standing at the door."
+            },
+            "warten": {
+              "english": "wait",
+              "example_de": "Ich warte schon seit einer halben Stunde auf dich.",
+              "example_en": "I have been waiting for you for half an hour."
+            },
+            "stehen bleiben": {
+              "english": "stand still",
+              "example_de": "Bleib bitte stehen, damit ich dir den Pullover anziehen kann.",
+              "example_en": "Please stand still so that I can put the pullover on you."
+            },
+            "sich setzen": {
+              "english": "sit down",
+              "example_de": "Der Großvater setzt sich auf das Sofa.",
+              "example_en": "The grandfather sits down on the couch."
+            },
+            "sich hinsetzen": {
+              "english": "sit down",
+              "example_de": "Setz dich doch hin!",
+              "example_en": "Please sit down!"
+            },
+            "sitzen": {
+              "english": "sit",
+              "example_de": "Carola möchte neben ihrer Mama sitzen.",
+              "example_en": "Carola would like to sit next to her mother."
+            },
+            "liegen": {
+              "english": "lie",
+              "example_de": "Er liegt noch im Bett.",
+              "example_en": "He is still lying in bed."
+            },
+            "legen": {
+              "english": "lay down; put",
+              "example_de": "Sie legt die Zeitung auf den Tisch.",
+              "example_en": "She puts the newspaper down on the table."
+            },
+            "sich ausruhen": {
+              "english": "have a rest",
+              "example_de": "Sie ruht sich vom Fensterputzen aus.",
+              "example_en": "She has a rest from cleaning the windows."
+            },
+            "sich hinlegen": {
+              "english": "lie down",
+              "example_de": "Sie legt sich nach dem Mittagessen gerne eine halbe Stunde hin.",
+              "example_en": "She likes to lie down for half an hour at midday."
+            },
+            "guttun": {
+              "english": "feel good",
+              "example_de": "Hatte ich keinen Stress - das tat gut.",
+              "example_en": "I had no stress today - that feels good."
+            },
+            "anziehen": {
+              "english": "put on; dress",
+              "example_de": "Isabella zieht ihr neues Kleid an.",
+              "example_en": "Isabella puts on her new dress."
+            },
+            "sich anziehen": {
+              "english": "get dressed",
+              "example_de": "Du musst dich warm anziehen - es ist draußen sehr kalt.",
+              "example_en": "You have to get dressed warmly - it is very cold outside."
+            }
+          },
+          "adjectives": {
+            "alltäglich": {
+              "english": "daily; everyday",
+              "example_de": "Bei ihrem alltäglichen Spaziergang mit dem Hund trifft sie immer Bekannte.",
+              "example_en": "She always meets friends during her daily walk with the dog."
+            },
+            "gewohnt": {
+              "english": "familiar",
+              "example_de": "In ihrer gewohnten Umgebung fühlt sich die alte Frau am wohlsten.",
+              "example_en": "The old woman feels the most comfortable in her familiar environment."
+            },
+            "regelmäßig": {
+              "english": "regular; regularly",
+              "example_de": "Der regelmäßige Sport tut ihr gut.",
+              "example_en": "The regular exercise is good for her."
+            },
+            "üblich": {
+              "english": "customary; usual",
+              "example_de": "In meiner Familie ist es üblich, nach dem Frühstück Zähne zu putzen.",
+              "example_en": "It is customary for my family to brush their teeth after breakfast."
+            },
+            "ständig": {
+              "english": "constant; always",
+              "example_de": "Mein Hund ist mein ständiger Begleiter.",
+              "example_en": "My dog is my constant companion."
+            },
+            "dauernd": {
+              "english": "constant; constantly; permanent",
+              "example_de": "Meine Tochter schminkt sich dauernd.",
+              "example_en": "My daughter is constantly putting on make-up."
+            },
+            "entspannend": {
+              "english": "relaxing",
+              "example_de": "Unser Spaziergang war richtig entspannend.",
+              "example_en": "Our walk was really relaxing."
+            },
+            "eilig": {
+              "english": "hurried",
+              "example_de": "Ich habe es sehr eilig!",
+              "example_en": "I am in a great hurry!"
+            },
+            "fertig": {
+              "english": "finished",
+              "example_de": "Bist du fertig? Können wir jetzt gehen?",
+              "example_en": "Have you finished? Can we go now?"
+            },
+            "bereit": {
+              "english": "ready; prepared",
+              "example_de": "Alle außer dir sind schon bereit zum Gehen.",
+              "example_en": "Everybody but you is ready to go."
+            }
+          },
+          "adverbs": {
+            "üblicherweise": {
+              "english": "usually",
+              "example_de": "Üblicherweise brauche ich morgens eine halbe Stunde zur Arbeit.",
+              "example_en": "It usually takes me half an hour to get to work in the morning."
+            },
+            "gewöhnlich": {
+              "english": "usually",
+              "example_de": "Er verlässt gewöhnlich um 7.30 Uhr seine Wohnung, um zur Arbeit zu gehen.",
+              "example_en": "He usually leaves his flat at 7.30 a.m. to go to work."
+            },
+            "eher": {
+              "english": "earlier; sooner",
+              "example_de": "Mein Mann steht meistens eher auf als ich.",
+              "example_en": "My husband usually gets up earlier than I."
+            }
+          },
+          "phrases": {
+            "zu Fuß": {
+              "english": "on foot",
+              "example_de": "Herr Röhrig kommt nie mit dem Auto zur Arbeit; er kommt immer zu Fuß.",
+              "example_en": "Mr Röhrig never takes the car to work; he always goes on foot."
+            },
+            "jedes Mal": {
+              "english": "every time",
+              "example_de": "Jedes Mal, wenn sie ihn sieht, bekommt sie Herzklopfen.",
+              "example_en": "Every time she sees him, her heart starts beating fast."
+            },
+            "etwas gewohnt sein": {
+              "english": "be used to sth",
+              "example_de": "Sie war es gewohnt, jeden Tag 8 Kilometer zu Fuß zu gehen.",
+              "example_en": "She was used to walking 8 kilometres every day."
+            },
+            "viel zu tun haben": {
+              "english": "have a lot on",
+              "example_de": "Sie hat heute viel zu tun: Sie muss einkaufen gehen, kochen, bügeln und die Kinder vom Kindergarten abholen.",
+              "example_en": "She has a lot on today: She has to go shopping, cook, iron and pick up the children from kindergarten."
+            }
+          }
+        },
+        {
+          "id": "set2.2",
+          "name": "Going to bed, sleeping, getting up",
+          "description": "Vocabulary related to sleep and waking up.",
+          "nouns": {
+            "Schlaf": {
+              "article": "der",
+              "english": "sleep",
+              "example_de": "Er hat einen tiefen Schlaf.",
+              "example_en": "He sleeps deeply."
+            },
+            "Nickerchen": {
+              "article": "das",
+              "english": "nap",
+              "example_de": "Nach der Arbeit hält mein Vater immer ein Nickerchen.",
+              "example_en": "After work my father always has a nap."
+            },
+            "Traum": {
+              "article": "der",
+              "english": "dream",
+              "example_de": "Er hatte immer wieder schlechte Träume.",
+              "example_en": "He has bad dreams again and again."
+            },
+            "Müdigkeit": {
+              "article": "die",
+              "english": "tiredness",
+              "example_de": "Die Kleine kann vor Müdigkeit kaum noch die Augen offen halten.",
+              "example_en": "The little one can hardly keep her eyes open she is so tired."
+            },
+            "Wecker": {
+              "article": "der",
+              "english": "alarm clock",
+              "example_de": "Ich muss noch den Wecker stellen.",
+              "example_en": "I still have to set the alarm clock."
+            }
+          },
+          "verbs": {
+            "schlafen": {
+              "english": "sleep",
+              "example_de": "Hast du gut geschlafen?",
+              "example_en": "Did you sleep well?"
+            },
+            "einschlafen": {
+              "english": "fall asleep, get to sleep",
+              "example_de": "Weil sie immer an die Prüfung dachte, konnte sie nicht einschlafen.",
+              "example_en": "She couldn't get to sleep for thinking about the exam."
+            },
+            "träumen": {
+              "english": "dream",
+              "example_de": "Das Kind hat schlecht geträumt.",
+              "example_en": "The child had bad dreams."
+            },
+            "wecken": {
+              "english": "wake",
+              "example_de": "Können Sie mich morgen bitte um 7 Uhr wecken?",
+              "example_en": "Could you wake me up at 7 a.m. tomorrow, please?"
+            },
+            "aufwachen": {
+              "english": "wake up",
+              "example_de": "Er wacht immer auf, wenn es morgens hell wird.",
+              "example_en": "He always wakes up when it gets light in the morning."
+            },
+            "aufstehen": {
+              "english": "get up; stand up",
+              "example_de": "Sie stehen unter der Woche um 6 Uhr auf; nur am Wochenende schlafen sie länger.",
+              "example_en": "They get up at 6 a.m. during the week; only at the weekend do they sleep longer."
+            }
+          },
+          "adjectives": {
+            "fest": {
+              "english": "deep; deeply sound",
+              "example_de": "Er schlief so fest, dass ich ihn fast nicht wecken konnte.",
+              "example_en": "He slept so deeply that I could hardly wake him."
+            },
+            "müde": {
+              "english": "tired",
+              "example_de": "Sven hat in der Nacht wenig geschlafen, heute ist er müde.",
+              "example_en": "Sven slept little during the night, he is tired today."
+            },
+            "wach": {
+              "english": "awake",
+              "example_de": "Abends bin ich oft noch einmal richtig wach!",
+              "example_en": "In the evening I often feel fully awake."
+            }
+          },
+          "adverbs": {
+            "noch": {
+              "english": "yet",
+              "example_de": "Schläfst du schon? Nein, noch nicht.",
+              "example_en": "Are you asleep? No, not yet."
+            },
+            "immer": {
+              "english": "always",
+              "example_de": "Frau Kant trinkt morgens immer Tee.",
+              "example_en": "Mrs Kant always drinks tea in the morning."
+            }
+          },
+          "phrases": {
+            "ins / zu Bett gehen": {
+              "english": "go to bed",
+              "example_de": "Meine Eltern gehen immer gegen 23 Uhr ins Bett.",
+              "example_en": "My parents always go to bed at 11 p.m."
+            },
+            "auf sein": {
+              "english": "be up",
+              "example_de": "Ist er schon auf oder schläft er noch?",
+              "example_en": "Is he already up or is he still sleeping?"
+            }
+          }
+        },
+        {
+          "id": "set2.3",
+          "name": "Personal hygiene and cosmetics",
+          "description": "Vocabulary related to personal care.",
+          "nouns": {
+            "Bad": {
+              "article": "das",
+              "english": "bath",
+              "example_de": "Ein heißes Bad würde dir vielleicht gut tun.",
+              "example_en": "A hot bath would maybe do you good."
+            },
+            "Seife": {
+              "article": "die",
+              "english": "soap",
+              "example_de": "Die Seife riecht gut.",
+              "example_en": "The soap smells good."
+            },
+            "Shampoo": {
+              "article": "das",
+              "english": "shampoo",
+              "example_de": "Das Shampoo ist fast leer.",
+              "example_en": "The shampoo is almost empty."
+            },
+            "Handtuch": {
+              "article": "das",
+              "english": "(hand)towel",
+              "example_de": "Sie braucht ein großes Handtuch.",
+              "example_en": "She needs a big towel."
+            },
+            "Bürste": {
+              "article": "die",
+              "english": "hairbrush",
+              "example_de": "Für meine langen Haare brauche ich eine Bürste.",
+              "example_en": "I need a hairbrush for my long hair."
+            },
+            "Kamm": {
+              "article": "der",
+              "english": "comb",
+              "example_de": "Hast du einen Kamm?",
+              "example_en": "Do you have a comb?"
+            },
+            "Fön": {
+              "article": "der",
+              "english": "hairdryer",
+              "example_de": "Sie trocknet sich die Haare mit einem Fön.",
+              "example_en": "She dries her hair with a hairdryer."
+            },
+            "Zahnbürste": {
+              "article": "die",
+              "english": "toothbrush",
+              "example_de": "Hast du eine Zahnbürste dabei?",
+              "example_en": "Do you have a toothbrush?"
+            },
+            "Zahnpasta": {
+              "article": "die",
+              "english": "toothpaste",
+              "example_de": "Diese Zahnpasta ist für sensible Zähne.",
+              "example_en": "This toothpaste is for sensitive teeth."
+            },
+            "Zahncreme": { "article": "die", "english": "toothpaste" },
+            "Creme": {
+              "article": "die",
+              "english": "cream",
+              "example_de": "Sie verwendet eine Creme für trockene Haut.",
+              "example_en": "She uses a cream for dry skin."
+            },
+            "Parfüm": {
+              "article": "das",
+              "english": "perfume",
+              "example_de": "Dein Parfüm riecht ganz toll!",
+              "example_en": "Your perfume smells absolutely super!"
+            },
+            "Lippenstift": {
+              "article": "der",
+              "english": "lipstick",
+              "example_de": "Das ist ein schöner Lippenstift.",
+              "example_en": "That's a beautiful lipstick."
+            },
+            "Bart": {
+              "article": "der",
+              "english": "beard",
+              "example_de": "Er lässt sich einen Bart wachsen.",
+              "example_en": "He is growing a beard."
+            },
+            "Rasierapparat": {
+              "article": "der",
+              "english": "razor",
+              "example_de": "Wo ist denn der Rasierapparat?",
+              "example_en": "Where is the razor?"
+            },
+            "Spiegel": {
+              "article": "der",
+              "english": "mirror",
+              "example_de": "Marietta betrachtet sich im Spiegel.",
+              "example_en": "Marietta looks at herself in the mirror."
+            },
+            "Toilette": {
+              "article": "die",
+              "english": "toilet",
+              "example_de": "Ich muss auf (die) Toilette.",
+              "example_en": "I need to go to the toilet."
+            },
+            "WC": {
+              "article": "das",
+              "english": "WC",
+              "example_de": "Wo ist das WC, bitte?",
+              "example_en": "Where is the WC, please?"
+            },
+            "Toilettenpapier": {
+              "article": "das",
+              "english": "toilet paper",
+              "example_de": "Das Toilettenpapier ist fast alle.",
+              "example_en": "There's hardly any toilet paper."
+            },
+            "Binde": {
+              "article": "die",
+              "english": "sanitary towel (BE), sanitary napkin (AE)",
+              "example_de": "Ich habe vergessen, Binden zu kaufen.",
+              "example_en": "I forgot to buy sanitary towels."
+            },
+            "Tampon": {
+              "article": "der",
+              "english": "tampon",
+              "example_de": "Ich brauche Tampons.",
+              "example_en": "I need tampons."
+            },
+            "Windel": {
+              "article": "die",
+              "english": "nappy (BE), diaper (AE)",
+              "example_de": "Die Windeln sind aus.",
+              "example_en": "There are no nappies left."
+            },
+            "Drogerie": {
+              "article": "die",
+              "english": "chemist's (BE), drugstore (AE)",
+              "example_de": "Kannst du mir aus der Drogerie Deospray und Klopapier mitbringen?",
+              "example_en": "Can you bring me some deodorant spray and toilet paper from the drugstore?"
+            },
+            "Frisur": {
+              "article": "die",
+              "english": "hairstyle",
+              "example_de": "Sie hätte gerne mal wieder eine neue Frisur.",
+              "example_en": "She would like to have a new hairstyle."
+            },
+            "Schere": {
+              "article": "die",
+              "english": "scissors",
+              "example_de": "Hol mal eine Schere, bitte!",
+              "example_en": "Get the scissors, please!"
+            },
+            "Salon": {
+              "article": "der",
+              "english": "parlour (BE), parlor (AE); salon",
+              "example_de": "Daniel ist ein erfolgreicher Friseur. Vor kurzem hat er seinen eigenen Salon eröffnet.",
+              "example_en": "Daniel is a successful hairdresser. He has recently opened his own salon."
+            }
+          },
+          "verbs": {
+            "sich waschen": {
+              "english": "wash",
+              "example_de": "Wasch dir bitte die Hände!",
+              "example_en": "Wash your hands, please!"
+            },
+            "duschen": {
+              "english": "take a shower; give a shower",
+              "example_de": "Vor Betreten des Bades bitte duschen!",
+              "example_en": "Please take a shower before entering the pool."
+            },
+            "sich duschen": {
+              "english": "take a shower",
+              "example_de": "Er duscht sich jeden Morgen kalt.",
+              "example_en": "He takes a cold shower every morning."
+            },
+            "baden": {
+              "english": "take a bath",
+              "example_de": "Möchtest du duschen oder baden?",
+              "example_en": "Would you like to take a shower or a bath?"
+            },
+            "abtrocknen": {
+              "english": "dry (off)",
+              "example_de": "Kann ich mit diesem Handtuch den Hund abtrocknen?",
+              "example_en": "Can I use this towel to dry off the dog?"
+            },
+            "kämmen": {
+              "english": "comb",
+              "example_de": "Sie kämmt ihren Kindern die Haare.",
+              "example_en": "She combs her children's hair."
+            },
+            "sich kämmen": {
+              "english": "comb one's hair",
+              "example_de": "Sie kämmt sich die Haare.",
+              "example_en": "She is combing her hair."
+            },
+            "schneiden": {
+              "english": "cut",
+              "example_de": "Sie schneidet ihrem Mann die Haare.",
+              "example_en": "She cuts her husband's hair."
+            },
+            "sich schminken": {
+              "english": "put on make-up",
+              "example_de": "Sie braucht noch ein bisschen Zeit, um sich zu schminken.",
+              "example_en": "She still needs some time to put her make-up on."
+            },
+            "schminken": {
+              "english": "paint one's face",
+              "example_de": "Ich schminke die Kinder für den Karneval.",
+              "example_en": "I am painting the children's faces for carnival."
+            },
+            "rasieren": {
+              "english": "shave",
+              "example_de": "Sie rasierte ihrem Mann die Haare.",
+              "example_en": "She shaved her husband's hair."
+            },
+            "sich rasieren": {
+              "english": "shave",
+              "example_de": "Du müsstest dich mal wieder rasieren.",
+              "example_en": "You should have another shave."
+            }
+          },
+          "phrases": {
+            "Zähne putzen": {
+              "english": "brush one's teeth",
+              "example_de": "Hast du schon Zähne geputzt?",
+              "example_en": "Have you already brushed your teeth?"
+            },
+            "sich die Haare schneiden lassen": {
+              "english": "have / get one's hair cut",
+              "example_de": "Du solltest dir mal wieder die Haare schneiden lassen!",
+              "example_en": "You should have / get your hair cut!"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "The human body",
+      "sets": [
+        {
+          "id": "set3.1",
+          "name": "From Birth to Death",
+          "description": "Vocabulary related to life stages.",
+          "nouns": {
+            "Leben": {
+              "article": "das",
+              "english": "life",
+              "example_de": "Er hatte ein langes und schönes Leben.",
+              "example_en": "He had a long and wonderful life."
+            },
+            "Geburt": {
+              "article": "die",
+              "english": "birth",
+              "example_de": "Herzliche Glückwünsche zur Geburt eures Sohnes!",
+              "example_en": "Congratulations on the birth of your son!"
+            },
+            "Nachwuchs": {
+              "article": "der",
+              "english": "offspring",
+              "example_de": "Und, was macht der Nachwuchs?",
+              "example_en": "And, how's the offspring?"
+            },
+            "Entwicklung": {
+              "article": "die",
+              "english": "development",
+              "example_de": "Für die gute Entwicklung eines Kindes ist eine gesunde Ernährung wichtig.",
+              "example_en": "A healthy diet is important for the good development of a child."
+            },
+            "Kindheit": {
+              "article": "die",
+              "english": "childhood",
+              "example_de": "Er hatte eine glückliche Kindheit.",
+              "example_en": "He had a happy childhood."
+            },
+            "Jugend": {
+              "article": "die",
+              "english": "youth",
+              "example_de": "In seiner Jugend war er auf vielen Rockkonzerten.",
+              "example_en": "He went to many rock concerts in his youth."
+            },
+            "Jugendliche": {
+              "article": "der/die",
+              "english": "young person; adolescent",
+              "example_de": "Die Jugendlichen gehen abends gerne in die Disko.",
+              "example_en": "The young people like to go to the disco."
+            },
+            "Erwachsene": {
+              "article": "der/die",
+              "english": "adult",
+              "example_de": "Der Eintritt kostet für Erwachsene 12 €, für Kinder 5 €.",
+              "example_en": "Admission costs €12 for adults, €5 for children."
+            },
+            "Senioren": {
+              "article": "die",
+              "english": "seniors; senior citizens",
+              "example_de": "Die Mahlzeiten sind extra für Senioren.",
+              "example_en": "The meals are especially for seniors."
+            },
+            "Alter": {
+              "article": "das",
+              "english": "old age",
+              "example_de": "Im Alter hört man oft nicht mehr so gut.",
+              "example_en": "You do not often hear all that well in old age."
+            },
+            "Tod": {
+              "article": "der",
+              "english": "death",
+              "example_de": "Sein Tod kam für alle völlig überraschend.",
+              "example_en": "His death came completely unexpected for everybody."
+            },
+            "Tote": {
+              "article": "der/die",
+              "english": "dead man / woman",
+              "example_de": "Nach dem Tsunami konnten manche Toten nicht identifiziert werden.",
+              "example_en": "Some of the dead could not be identified after the tsunami."
+            }
+          },
+          "verbs": {
+            "leben": {
+              "english": "live (be alive)",
+              "example_de": "Manche Menschen leben länger als 100 Jahre.",
+              "example_en": "Some people live to be over 100 years old."
+            },
+            "geboren werden": {
+              "english": "be born",
+              "example_de": "Seine Tochter wurde im Mai geboren.",
+              "example_en": "His daughter was born in May."
+            },
+            "ein Kind bekommen": {
+              "english": "have a child",
+              "example_de": "Sie bekommen im Herbst ihr zweites Kind.",
+              "example_en": "They will have their second child in the autumn."
+            },
+            "wachsen": {
+              "english": "grow",
+              "example_de": "Seine Schuhe sind ihm zu klein, seine Füße sind schon wieder gewachsen.",
+              "example_en": "His shoes are too small, his feet have grown again."
+            },
+            "sich entwickeln": {
+              "english": "develop",
+              "example_de": "Ihr Kind entwickelt sich ganz normal.",
+              "example_en": "Your child is developing normally."
+            },
+            "sterben": {
+              "english": "die",
+              "example_de": "Ihre Mutter starb gestern Nacht im Krankenhaus.",
+              "example_en": "Her mother died in hospital last night."
+            },
+            "ums Leben kommen": {
+              "english": "be killed",
+              "example_de": "Mario ist bei einem Unfall ums Leben gekommen.",
+              "example_en": "Mario has been killed in an accident."
+            }
+          },
+          "adjectives": {
+            "erwachsen": {
+              "english": "adult",
+              "example_de": "Sie ist zwar erst 16 Jahre alt, aber sie sieht schon ziemlich erwachsen aus.",
+              "example_en": "She is only 16 years old but she already looks quite adult."
+            },
+            "groß": {
+              "english": "grown up",
+              "example_de": "Wenn unsere Kinder groß sind, sollen sie sich eine eigene Wohnung nehmen.",
+              "example_en": "When our children are grown up, they should get their own flat."
+            },
+            "alt": {
+              "english": "old",
+              "example_de": "Seine Mutter ist schon sehr alt.",
+              "example_en": "His mother is very old."
+            },
+            "tödlich": {
+              "english": "deadly",
+              "example_de": "Giftige Pilze zu essen, kann tödlich sein.",
+              "example_en": "Eating poisonous mushrooms can be deadly."
+            }
+          }
+        },
+        {
+          "id": "set3.2",
+          "name": "Body Parts and Organs",
+          "description": "Vocabulary for parts of the human body.",
+          "nouns": {
+            "Kopf": {
+              "article": "der",
+              "english": "head",
+              "example_de": "Er hat nur noch wenige Haare auf dem Kopf.",
+              "example_en": "He only has a few hairs on his head."
+            },
+            "Haar": {
+              "article": "das",
+              "english": "hair",
+              "example_de": "Sie hat wundervolles Haar.",
+              "example_en": "She has wonderful hair."
+            },
+            "Gesicht": {
+              "article": "das",
+              "english": "face",
+              "example_de": "Sie ist schön braun im Gesicht.",
+              "example_en": "She has a nicely tanned face."
+            },
+            "Auge": {
+              "article": "das",
+              "english": "eye",
+              "example_de": "Viele Babys haben bei ihrer Geburt blaue Augen.",
+              "example_en": "Many babies have blue eyes at their birth."
+            },
+            "Ohr": {
+              "article": "das",
+              "english": "ear",
+              "example_de": "Auf dem rechten Ohr hört er kaum noch etwas.",
+              "example_en": "He can hardly hear anything with his right ear."
+            },
+            "Nase": {
+              "article": "die",
+              "english": "nose",
+              "example_de": "Sie hat die große Nase von ihrem Vater geerbt.",
+              "example_en": "She inherited the big nose from her father."
+            },
+            "Mund": {
+              "article": "der",
+              "english": "mouth",
+              "example_de": "Beim Zahnarzt musst du den Mund öffnen, damit er die Zähne untersuchen kann.",
+              "example_en": "You have to open your mouth at the dentist so he can examine your teeth."
+            },
+            "Lippe": {
+              "article": "die",
+              "english": "lip",
+              "example_de": "Im Winter hat man oft trockene Lippen.",
+              "example_en": "You often have dry lips in the winter."
+            },
+            "Zahn": {
+              "article": "der",
+              "english": "tooth",
+              "example_de": "Wenn Paula lächelt, sieht man ihre weißen Zähne blitzen.",
+              "example_en": "You can see her white teeth flashing when Paula smiles."
+            },
+            "Gehirn": {
+              "article": "das",
+              "english": "brain",
+              "example_de": "Das Gehirn besteht aus einer linken und einer rechten Hälfte.",
+              "example_en": "The brain consists of a left and a right half."
+            },
+            "Hals": {
+              "article": "der",
+              "english": "throat",
+              "example_de": "Ihm tut der Hals weh.",
+              "example_en": "His throat is hurting."
+            },
+            "Brust": {
+              "article": "die",
+              "english": "breast; chest",
+              "example_de": "Das Hemd ist zu eng über der Brust.",
+              "example_en": "The shirt is too tight across the chest."
+            },
+            "Finger": {
+              "article": "der",
+              "english": "finger",
+              "example_de": "Er trägt den Ehering seiner verstorbenen Frau am kleinen Finger.",
+              "example_en": "He wears his dead wife's wedding ring on his little finger."
+            },
+            "Nagel": {
+              "article": "der",
+              "english": "nail",
+              "example_de": "Er muss sich die Fingernägel schneiden.",
+              "example_en": "He has to cut his nails."
+            },
+            "Bein": {
+              "article": "das",
+              "english": "leg",
+              "example_de": "Der Mensch läuft auf zwei Beinen, die meisten Tiere auf vier.",
+              "example_en": "Humans walk on two legs, most animals walk on four legs."
+            },
+            "Fuß": {
+              "article": "der",
+              "english": "foot",
+              "example_de": "Er kann nicht gut tanzen; er tritt seiner Partnerin immer auf die Füße.",
+              "example_en": "He cannot dance well, he always stands on his partner's feet."
+            },
+            "Knie": {
+              "article": "das",
+              "english": "knee",
+              "example_de": "Der Rock geht über das Knie.",
+              "example_en": "The skirt is above the knee."
+            },
+            "Körper": {
+              "article": "der",
+              "english": "body",
+              "example_de": "Er geht ins Fitnessstudio, um etwas für seinen Körper zu tun.",
+              "example_en": "He goes to the gym to keep his body fit."
+            },
+            "Knochen": {
+              "article": "der",
+              "english": "bone",
+              "example_de": "Ich war gestern joggen; heute tun mir alle Knochen weh.",
+              "example_en": "I went jogging yesterday; today all my bones are hurting."
+            },
+            "Haut": {
+              "article": "die",
+              "english": "skin",
+              "example_de": "Babys haben eine ganz weiche, zarte Haut.",
+              "example_en": "Babies have very soft and tender skin."
+            },
+            "Muskel": {
+              "article": "der",
+              "english": "muscle",
+              "example_de": "Beim Bodybuilding trainiert man speziell die Muskeln.",
+              "example_en": "Bodybuilding trains specifically the muscles."
+            },
+            "Nerv": {
+              "article": "der",
+              "english": "nerve",
+              "example_de": "Markus ist Lehrer. Für diesen Beruf braucht man starke Nerven.",
+              "example_en": "Markus is a teacher. You need strong nerves for this job."
+            },
+            "Blut": {
+              "article": "das",
+              "english": "blood",
+              "example_de": "Bei der Verkehrskontrolle wurde festgestellt, dass er zu viel Alkohol im Blut hatte.",
+              "example_en": "The traffic check found that he had too much alcohol in his blood."
+            }
+          },
+          "verbs": {
+            "bluten": {
+              "english": "bleed",
+              "example_de": "Das Kind blutete am Knie, denn es war hingefallen.",
+              "example_en": "The child's knee was bleeding because he fell."
+            }
+          }
+        },
+        {
+          "id": "set3.3",
+          "name": "Appearance",
+          "description": "Vocabulary for describing appearance.",
+          "nouns": {
+            "Figur": {
+              "article": "die",
+              "english": "body",
+              "example_de": "Christian hat eine gute Figur.",
+              "example_en": "Christian has a great body."
+            }
+          },
+          "verbs": {
+            "aussehen": {
+              "english": "look",
+              "example_de": "Dein Freund sieht echt gut aus!",
+              "example_en": "Your friend looks really good!"
+            },
+            "zunehmen": {
+              "english": "put on weight",
+              "example_de": "Er hat im letzten Jahr fünf Kilo zugenommen.",
+              "example_en": "He put on 5 kilos last year."
+            }
+          },
+          "adjectives": {
+            "hübsch": {
+              "english": "pretty",
+              "example_de": "Die Schneiders haben zwei hübsche Töchter.",
+              "example_en": "The Schneiders have got two pretty daughters."
+            },
+            "schön": {
+              "english": "beautiful, nice",
+              "example_de": "Sie ist eine schöne Frau.",
+              "example_en": "She is a beautiful woman."
+            },
+            "hässlich": {
+              "english": "ugly",
+              "example_de": "Sie ist nicht schön, aber auch nicht hässlich.",
+              "example_en": "She is not beautiful but not ugly either."
+            },
+            "blass": {
+              "english": "pale",
+              "example_de": "Sie ist noch immer nicht richtig gesund, sie sieht noch blass aus.",
+              "example_en": "She has not fully recovered yet, she still looks pale."
+            },
+            "jugendlich": {
+              "english": "young",
+              "example_de": "Maren sieht immer noch jugendlich aus, obwohl sie 40 Jahre alt ist.",
+              "example_en": "Maren still looks young although she is 40 years old."
+            },
+            "attraktiv": {
+              "english": "attractive",
+              "example_de": "Sie ist zwar nicht mehr jung, aber immer noch eine sehr attraktive Frau.",
+              "example_en": "She is not young anymore but is still a very attractive woman."
+            },
+            "blond": {
+              "english": "blond(e)",
+              "example_de": "Linda hat von Natur aus braune Haare, sie färbt sie sich immer blond.",
+              "example_en": "Linda has naturally brown hair, she always dyes her hair blond."
+            },
+            "braun": { "english": "brown" },
+            "schwarz": {
+              "english": "black",
+              "example_de": "Als er noch jung war, hatte er schwarze Haare, jetzt sind sie grau.",
+              "example_en": "He had black hair when he was young, now it is grey."
+            },
+            "grau": { "english": "grey (BE), gray (AE)" },
+            "kurz": {
+              "english": "short",
+              "example_de": "Ihr Mann findet, dass ihr kurze Haare besser stehen als lange.",
+              "example_en": "Her husband thinks that short hair suits her better than long hair."
+            },
+            "lang": { "english": "long" },
+            "dunkel": {
+              "english": "dark",
+              "example_de": "Mein Bruder hat dunklere Haare als ich.",
+              "example_en": "My brother has darker hair than I."
+            },
+            "grün": {
+              "english": "green",
+              "example_de": "Ihr Sohn hat grüne und ihre Tochter blaue Augen.",
+              "example_en": "Her son has green eyes and her daughter blue eyes."
+            },
+            "blau": { "english": "blue" }
+          },
+          "phrases": {
+            "sich ähnlich sehen": {
+              "english": "look alike",
+              "example_de": "Die Geschwister sehen sich gar nicht ähnlich.",
+              "example_en": "The siblings do not look alike at all."
+            }
+          }
+        },
+        {
+          "id": "set3.4",
+          "name": "Perception with the Senses",
+          "description": "Vocabulary for senses and perception.",
+          "nouns": {
+            "Gefühl": {
+              "article": "das",
+              "english": "feeling",
+              "example_de": "Es ist sehr kalt draußen, ich habe kein Gefühl mehr in den Fingern.",
+              "example_en": "It is very cold outside, I have no feeling in my fingers anymore."
+            },
+            "Realität": {
+              "article": "die",
+              "english": "reality",
+              "example_de": "Die Realität sieht leider meistens ganz anders aus.",
+              "example_en": "Unfortunately, in reality things usually look completely different."
+            },
+            "Wirklichkeit": {
+              "article": "die",
+              "english": "reality",
+              "example_de": "Alle halten mich für 29 - in Wirklichkeit bin ich aber schon 37 Jahre alt.",
+              "example_en": "Everybody thinks I'm 29 - in reality I am 37 years old."
+            },
+            "Stimme": {
+              "article": "die",
+              "english": "voice",
+              "example_de": "Jan hat am Telefon eine sehr angenehme Stimme.",
+              "example_en": "Jan has a very pleasant voice on the phone."
+            },
+            "Hitze": { "article": "die", "english": "heat" },
+            "Wärme": {
+              "article": "die",
+              "english": "warmth",
+              "example_de": "Wärme tut mir gut.",
+              "example_en": "Warmth does me good."
+            },
+            "Kälte": {
+              "article": "die",
+              "english": "cold",
+              "example_de": "Bei dieser Kälte wollen sie nicht spazieren gehen.",
+              "example_en": "They do not want to take a walk in this cold."
+            }
+          },
+          "verbs": {
+            "sehen": {
+              "english": "see",
+              "example_de": "Er sieht mit dem rechten Auge fast nichts mehr. Sie hat die Stufe nicht gesehen und ist gestolpert.",
+              "example_en": "He can hardly see anything with his right eye. She did not see the step and stumbled."
+            },
+            "fühlen": {
+              "english": "feel",
+              "example_de": "Fühl mal, ob das Wasser die richtige Temperatur hat, um das Baby zu baden.",
+              "example_en": "Could you please feel if the water has the right temperature to bath the baby."
+            },
+            "berühren": {
+              "english": "touch",
+              "example_de": "Im Museum soll man nichts berühren.",
+              "example_en": "You are not allowed to touch anything in a museum."
+            },
+            "anfassen": {
+              "english": "touch",
+              "example_de": "Bitte nichts anfassen!",
+              "example_en": "Please do not touch!"
+            },
+            "spüren": {
+              "english": "feel",
+              "example_de": "Er spürt den Wind auf seiner Haut.",
+              "example_en": "He feels the wind on his skin."
+            },
+            "wahrnehmen": {
+              "english": "notice",
+              "example_de": "Er hat die anderen Menschen gar nicht wahrgenommen.",
+              "example_en": "He did not notice the others at all."
+            },
+            "bemerken": {
+              "english": "notice",
+              "example_de": "Er bemerkte seinen Fehler erst, als es schon zu spät war.",
+              "example_en": "He didn't notice his mistake until it was already too late."
+            },
+            "erkennen": {
+              "english": "recognize",
+              "example_de": "Es war bereits dunkel, deswegen konnte ich keine Gesichter erkennen.",
+              "example_en": "It was already dark, so I could not recognize any faces."
+            },
+            "merken": {
+              "english": "notice",
+              "example_de": "Er hat gar nicht gemerkt, dass seine Frau wieder da ist.",
+              "example_en": "He did not notice that his wife was back again."
+            },
+            "realisieren": {
+              "english": "realize",
+              "example_de": "Brigitte realisierte gar nicht, dass ihre Mutter ins Zimmer gekommen war.",
+              "example_en": "Brigitte did not realize that her mother had come into the room."
+            },
+            "aufpassen": {
+              "english": "be careful",
+              "example_de": "Wenn ihr die Straße überquert, müsst ihr aufpassen, dass kein Auto kommt.",
+              "example_en": "If you cross the street, you have to be careful that there is no car coming."
+            },
+            "schauen": {
+              "english": "look",
+              "example_de": "Leon schaut seine Mutter an. Schau mal!",
+              "example_en": "Leon looks at his mother. Look!"
+            },
+            "gucken": {
+              "english": "look",
+              "example_de": "Er guckt aus dem Fenster. Guck mal!",
+              "example_en": "He looks out of the window. Look!"
+            },
+            "ansehen": {
+              "english": "look at",
+              "example_de": "Er sah sie an und lachte.",
+              "example_en": "He looked at her and laughed."
+            },
+            "beobachten": {
+              "english": "observe",
+              "example_de": "Sie beobachten die Sterne.",
+              "example_en": "They observe the stars."
+            },
+            "betrachten": {
+              "english": "look at, consider",
+              "example_de": "Betrachten Sie dieses Bild etwas genauer.",
+              "example_en": "Look at the picture carefully."
+            },
+            "hören": {
+              "english": "hear; listen",
+              "example_de": "Mein Opa hört nicht mehr sehr gut. Sie hört Musik.",
+              "example_en": "My grandpa does not hear very well anymore. She listens to music."
+            },
+            "verstehen": {
+              "english": "understand",
+              "example_de": "Wegen des Lärms konnte man den anderen kaum verstehen.",
+              "example_en": "You could hardly understand the other because of the noise."
+            }
+          },
+          "adjectives": {
+            "warm": {
+              "english": "warm",
+              "example_de": "Das Meer ist angenehm warm.",
+              "example_en": "The sea is pleasantly warm."
+            },
+            "heiß": {
+              "english": "hot",
+              "example_de": "Mir ist es hier zu heiß.",
+              "example_en": "It is too hot for me here."
+            },
+            "kalt": { "english": "cold" },
+            "sichtbar": {
+              "english": "visible",
+              "example_de": "Die Unterschiede sind wirklich kaum sichtbar.",
+              "example_en": "The differences are really hardly visible."
+            },
+            "leise": {
+              "english": "quiet; low, soft",
+              "example_de": "Die leise Musik im Hintergrund war sehr angenehm.",
+              "example_en": "The quiet music in the background was very pleasing."
+            },
+            "still": { "english": "silent, quiet" }
+          }
+        },
+        {
+          "id": "set3.5",
+          "name": "Sexuality and Relationships",
+          "description": "Vocabulary related to intimacy and pregnancy.",
+          "nouns": {
+            "Sexualität": {
+              "article": "die",
+              "english": "sexuality",
+              "example_de": "Die männliche und weibliche Sexualität sind verschieden.",
+              "example_en": "The male and female sexuality are different."
+            },
+            "Sex": {
+              "article": "der",
+              "english": "sex",
+              "example_de": "Sie hatten häufig Sex.",
+              "example_en": "They had sex frequently."
+            },
+            "Pille": {
+              "article": "die",
+              "english": "pill",
+              "example_de": "Sie nimmt die Pille.",
+              "example_en": "She is on the pill."
+            },
+            "Kondom": {
+              "article": "das",
+              "english": "condom",
+              "example_de": "Es gibt verschiedene Möglichkeiten, zum Beispiel, indem der Mann ein Kondom benutzt.",
+              "example_en": "There are many ways to avoid pregnancy, for example if the man uses a condom."
+            },
+            "Baby": {
+              "article": "das",
+              "english": "baby",
+              "example_de": "Wie alt ist denn Ihr Baby?",
+              "example_en": "How old is your baby?"
+            }
+          },
+          "adjectives": {
+            "homosexuell": {
+              "english": "homosexual",
+              "example_de": "Am Christopher Street Day demonstrieren Homosexuelle gegen ihre Diskriminierung.",
+              "example_en": "Homosexual people demonstrate against discrimination on Christopher Street Day."
+            },
+            "lesbisch": {
+              "english": "lesbian",
+              "example_de": "Lesbische Frauen sind nicht immer Feministinnen.",
+              "example_en": "Lesbian women are not always feminists."
+            },
+            "schwul": {
+              "english": "gay",
+              "example_de": "In diesem Lokal sind meistens schwule Paare.",
+              "example_en": "There are mostly gay couples in this bar."
+            },
+            "schwanger": {
+              "english": "pregnant",
+              "example_de": "Die Frau ist schwanger.",
+              "example_en": "The woman is pregnant."
+            },
+            "süß": {
+              "english": "sweet",
+              "example_de": "Das ist ja ein süßes Baby!",
+              "example_en": "What a sweet baby!"
+            }
+          },
+          "phrases": {
+            "im ... Monat sein": {
+              "english": "be ... months pregnant",
+              "example_de": "Gabriele ist im siebten Monat.",
+              "example_en": "Gabriele is seven months pregnant."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Character and feelings",
+      "sets": [
+        {
+          "id": "set4.1",
+          "name": "Attributes",
+          "description": "Words describing personality and character traits.",
+          "nouns": {
+            "Humor": {
+              "article": "der",
+              "english": "humour (BE), humor (AE)",
+              "example_de": "Sally hat keinen Humor: Sie versteht keinen Spaß.",
+              "example_en": "Sally has no sense of humour: She can't take a joke."
+            }
+          },
+          "adjectives": {
+            "pünktlich": {
+              "english": "punctual",
+              "example_de": "Meine Schwester ist nie pünktlich; sie kommt immer zu spät.",
+              "example_en": "My sister is never punctual; she always comes too late."
+            },
+            "treu": {
+              "english": "faithful, loyal",
+              "example_de": "Auf Maik kann man sich verlassen - er ist wirklich ein treuer Freund.",
+              "example_en": "You can rely on Maik - he really is a loyal friend."
+            },
+            "zuverlässig": {
+              "english": "reliable",
+              "example_de": "Oliver ist ein zuverlässiger Mensch.",
+              "example_en": "Oliver is a reliable person."
+            },
+            "streng": {
+              "english": "strict",
+              "example_de": "Er ist sehr streng zu seinen Kindern.",
+              "example_en": "He is very strict to his children."
+            },
+            "lustig": {
+              "english": "funny",
+              "example_de": "Melanie ist eine lustige Person. Sie macht gerne Witze.",
+              "example_en": "Melanie is a funny person. She likes to tell jokes."
+            },
+            "fröhlich": {
+              "english": "cheerful",
+              "example_de": "Simon ist ein fröhliches Kind.",
+              "example_en": "Simon is a cheerful child."
+            },
+            "frech": {
+              "english": "cheeky, fresh (AE)",
+              "example_de": "Sei nicht so frech zu deiner Mutter.",
+              "example_en": "Do not be so cheeky with your mother."
+            },
+            "passiv": {
+              "english": "passive",
+              "example_de": "Das Publikum war ziemlich passiv: Es hat keine Fragen gestellt.",
+              "example_en": "The audience was fairly passive: They did not ask any questions."
+            },
+            "neugierig": {
+              "english": "inquisitive",
+              "example_de": "Unsere Tochter ist sehr neugierig, sie interessiert sich für alles.",
+              "example_en": "Our daughter is very inquisitive, she is interested in everything."
+            }
+          }
+        },
+        {
+          "id": "set4.2",
+          "name": "Pleasant and Neutral Feelings",
+          "description": "Vocabulary for positive and neutral emotions.",
+          "nouns": {
+            "Gefühl": {
+              "article": "das",
+              "english": "feeling",
+              "example_de": "Mario spricht nicht gerne über Gefühle.",
+              "example_en": "Mario does not like to talk about feelings."
+            },
+            "Laune": {
+              "article": "die",
+              "english": "mood",
+              "example_de": "Meine Schwester hat morgens immer schlechte Laune.",
+              "example_en": "My sister is always in a bad mood in the morning."
+            },
+            "Erlebnis": {
+              "article": "das",
+              "english": "experience",
+              "example_de": "Der Besuch der Pariser Oper war ein tolles Erlebnis.",
+              "example_en": "Our visit to the Paris Opera was a fantastic experience."
+            },
+            "Glück": {
+              "article": "das",
+              "english": "happiness",
+              "example_de": "Es war ein wunderbarer Moment des Glücks, als wir auf dem Eiffelturm standen.",
+              "example_en": "It was a wonderful moment of happiness when we stood on the Eiffel Tower."
+            },
+            "Gewissen": {
+              "article": "das",
+              "english": "conscience",
+              "example_de": "Ich kann mit gutem Gewissen sagen, dass ich alles getan habe, was möglich war.",
+              "example_en": "I can say with a clear conscience that I did everything possible."
+            },
+            "Freude": {
+              "article": "die",
+              "english": "joy, pleasure, delight",
+              "example_de": "Man sah ihr die Freude an, als ihre Schwester auf sie zukam.",
+              "example_en": "You could see the joy on her face when her sister came up to her."
+            },
+            "Liebe": {
+              "article": "die",
+              "english": "love",
+              "example_de": "Die Liebe zu seiner Frau ist unendlich.",
+              "example_en": "His love for his wife is endless."
+            },
+            "Symbol": {
+              "article": "das",
+              "english": "symbol",
+              "example_de": "Das Symbol für die Liebe ist ein Herz.",
+              "example_en": "The symbol of love is a heart."
+            },
+            "Zeichen": {
+              "article": "das",
+              "english": "sign",
+              "example_de": "Er hat dir zugezwinkert, das war ein Zeichen!",
+              "example_en": "He winked at you; that was a sign!"
+            },
+            "Kuss": {
+              "article": "der",
+              "english": "kiss",
+              "example_de": "Gibst du mir noch einen Kuss, bevor du ins Bett gehst?",
+              "example_en": "Will you give me a kiss before you go to bed?"
+            },
+            "Vertrauen": {
+              "article": "das",
+              "english": "trust",
+              "example_de": "Sie hat Vertrauen zu ihrer Mutter.",
+              "example_en": "She trusts her mother."
+            },
+            "Überraschung": {
+              "article": "die",
+              "english": "surprise",
+              "example_de": "Du bist schwanger – das ist aber eine schöne Überraschung!",
+              "example_en": "You are pregnant - that is a nice surprise!"
+            },
+            "Hoffnung": {
+              "article": "die",
+              "english": "hope",
+              "example_de": "Sie hat die Hoffnung noch nicht aufgegeben, dass er mit dem Trinken aufhört.",
+              "example_en": "She has still not given up hope that he'll stop drinking."
+            }
+          },
+          "verbs": {
+            "fühlen": {
+              "english": "sense",
+              "example_de": "Paulina fühlt, ob es anderen Menschen gut geht.",
+              "example_en": "Paulina can sense what other people are feeling."
+            },
+            "erleben": {
+              "english": "experience",
+              "example_de": "Im Krieg haben die Menschen Schlimmes erlebt.",
+              "example_en": "People experienced dreadful things in the war."
+            },
+            "genießen": {
+              "english": "enjoy",
+              "example_de": "Andreas genießt es, am Wochenende mit seinen Kindern zu spielen.",
+              "example_en": "Andreas enjoys playing with his children at the weekend."
+            },
+            "ausmachen": {
+              "english": "bother; mind",
+              "example_de": "Macht es dir etwas aus, alleine ins Theater zu gehen?",
+              "example_en": "Would you mind going to the theatre alone?"
+            },
+            "sich freuen": {
+              "english": "be pleased / happy",
+              "example_de": "Sie freut sich über die Blumen, die Mattis mitgebracht hat.",
+              "example_en": "She is pleased with the flowers Mattis brought."
+            },
+            "lachen": {
+              "english": "laugh",
+              "example_de": "An dem Abend ging es uns gut - wir haben viel gelacht.",
+              "example_en": "We had a good time that evening - we laughed a lot."
+            },
+            "lächeln": {
+              "english": "smile",
+              "example_de": "Sie sah ihn an und lächelte.",
+              "example_en": "She looked at him and smiled."
+            },
+            "sich verlieben": {
+              "english": "fall in love",
+              "example_de": "Die beiden haben sich verliebt.",
+              "example_en": "Both of them have fallen in love."
+            },
+            "lieben": {
+              "english": "love",
+              "example_de": "Er liebt seine Ex-Frau immer noch.",
+              "example_en": "He still loves his ex-wife."
+            },
+            "lieb haben": {
+              "english": "love",
+              "example_de": "Er hat dich lieb.",
+              "example_en": "He loves you."
+            },
+            "küssen": {
+              "english": "kiss",
+              "example_de": "Als sie sich endlich wiedersahen, küssten sie sich.",
+              "example_en": "When they eventually saw each other again, they kissed each other."
+            },
+            "mögen": {
+              "english": "like",
+              "example_de": "Ich mag die Frau meines Bruders nicht. Der Hund mag dich.",
+              "example_en": "I do not like my brother's wife. The dog likes you."
+            },
+            "gernhaben": {
+              "english": "like",
+              "example_de": "Sie liebt Alexander nicht mehr, aber sie hat ihn immer noch gern.",
+              "example_en": "She does not love Alexander anymore but she still likes him."
+            },
+            "vertrauen": {
+              "english": "trust",
+              "example_de": "Er vertraut seinem Kollegen, er gibt ihm sogar sein Passwort.",
+              "example_en": "He trusts his colleague, he even gives him his password."
+            },
+            "sich wundern": {
+              "english": "be amazed",
+              "example_de": "Ich wundere mich, dass du schon wieder Hunger hast. Wir haben doch erst vor einer Stunde gegessen.",
+              "example_en": "I am surprised that you are hungry again. We only ate an hour ago."
+            },
+            "überraschen": {
+              "english": "surprise",
+              "example_de": "Er überrascht sie mit einem Blumenstrauß. Ich bin ganz überrascht, dass du schon da bist.",
+              "example_en": "He surprises her with a bunch of flowers. I am completely surprised that you are here already."
+            },
+            "hoffen": {
+              "english": "hope",
+              "example_de": "Ich hoffe, dass ihr alle zu meinem Fest kommt.",
+              "example_en": "I hope that all of you will be coming to my party."
+            },
+            "beruhigen": {
+              "english": "calm; reassure",
+              "example_de": "Beruhige dich doch - es ist nichts passiert.",
+              "example_en": "Calm down - nothing has happened."
+            }
+          },
+          "adjectives": {
+            "glücklich": {
+              "english": "happy; happily",
+              "example_de": "Sie ist mit ihrem Mann sehr glücklich.",
+              "example_en": "She is very happy with her husband."
+            },
+            "zufrieden": {
+              "english": "satisfied",
+              "example_de": "Bist du in deinem Beruf zufrieden?",
+              "example_en": "Are you satisfied with your job?"
+            },
+            "angenehm": {
+              "english": "pleasant",
+              "example_de": "Marion findet Marthas Stimme angenehm.",
+              "example_en": "Marion thinks that Martha has a pleasant voice."
+            },
+            "froh": {
+              "english": "glad",
+              "example_de": "Ich bin froh, dass dir nichts passiert ist!",
+              "example_en": "I am glad that nothing happened to you!"
+            },
+            "begeistert": {
+              "english": "excited; enthusiastic",
+              "example_de": "Merle ist ganz begeistert von dem Festival.",
+              "example_en": "Merle is really excited about the festival."
+            },
+            "stolz": {
+              "english": "proud",
+              "example_de": "Du hast die Prüfung bestanden! Du kannst stolz auf dich sein.",
+              "example_en": "You passed the exam! You can be proud of yourself."
+            },
+            "verliebt": {
+              "english": "in love, loving",
+              "example_de": "Sie ist in Henrico verliebt.",
+              "example_en": "She is in love with Henrico."
+            },
+            "dankbar": {
+              "english": "grateful",
+              "example_de": "Ich werde Ihnen für immer dankbar sein.",
+              "example_en": "I will be grateful to you forever."
+            },
+            "langweilig": {
+              "english": "boring",
+              "example_de": "Mir ist langweilig.",
+              "example_en": "I am bored."
+            }
+          },
+          "phrases": {
+            "egal sein": {
+              "english": "it's all the same",
+              "example_de": "Es ist mir egal, ob sie anruft.",
+              "example_en": "It's all the same to me if she calls or not."
+            }
+          }
+        },
+        {
+          "id": "set4.3",
+          "name": "Negative Feelings",
+          "description": "Words related to negative emotional states.",
+          "nouns": {
+            "Träne": {
+              "article": "die",
+              "english": "tear",
+              "example_de": "Bettina liefen die Tränen, als sie ihr Kind im Krankenhaus zurücklassen musste.",
+              "example_en": "The tears ran down Bettina's cheeks when she had to leave her child in hospital."
+            },
+            "Sorge": {
+              "article": "die",
+              "english": "worry",
+              "example_de": "Meine größte Sorge ist, dass ihm etwas passiert ist.",
+              "example_en": "My biggest worry is that something has happened to him."
+            },
+            "Angst": {
+              "article": "die",
+              "english": "fear",
+              "example_de": "Susi hat Angst vor Hunden.",
+              "example_en": "Susi is afraid of dogs."
+            },
+            "Schreck": {
+              "article": "der",
+              "english": "fright, scare",
+              "example_de": "Als er sein Portemonnaie nicht gleich fand, hat er einen großen Schreck bekommen.",
+              "example_en": "He got a big fright when he couldn't find his wallet straightaway."
+            },
+            "Ärger": {
+              "article": "der",
+              "english": "trouble; annoyance",
+              "example_de": "Heute hatte ich mit der Praktikantin wieder viel Ärger.",
+              "example_en": "I had a lot of trouble with the trainee again today."
+            },
+            "Enttäuschung": {
+              "article": "die",
+              "english": "disappointment",
+              "example_de": "Die Enttäuschung war ihm deutlich anzusehen.",
+              "example_en": "His disappointment was clear to see."
+            },
+            "Heimweh": {
+              "article": "das",
+              "english": "homesickness",
+              "example_de": "Ich bin schon seit 12 Monaten in Deutschland, aber ich habe immer noch Heimweh.",
+              "example_en": "I have already been in Germany for 12 months, but I am still homesick."
+            }
+          },
+          "verbs": {
+            "weinen": {
+              "english": "cry",
+              "example_de": "Sie weinte, als sie merkte, dass sie ihre Kette verloren hatte.",
+              "example_en": "She cried when she saw that she had lost her necklace."
+            },
+            "leidtun": {
+              "english": "sb is sorry",
+              "example_de": "Der alte Mann tut ihnen leid. Tut mir leid, da kann ich Ihnen nicht helfen.",
+              "example_en": "They are sorry about the old man. I am sorry, I cannot help you."
+            },
+            "sich sorgen": {
+              "english": "be worried",
+              "example_de": "Seit sie von dem Unfall gehört hat, sorgt sie sich um ihren Sohn.",
+              "example_en": "She has been worried about her son since she heard about the accident."
+            },
+            "sich fürchten": {
+              "english": "fear",
+              "example_de": "Sie fürchtet sich vor der Dunkelheit.",
+              "example_en": "She is afraid of the dark."
+            },
+            "erschrecken": {
+              "english": "give a fright",
+              "example_de": "Du sollst mich doch nicht so erschrecken!",
+              "example_en": "You should not give me a fright!"
+            },
+            "sich aufregen": {
+              "english": "get worked up",
+              "example_de": "Alle Nachbarn regen sich auf, weil Herr Mantei in der Mittagszeit den Rasen mäht.",
+              "example_en": "All of the neighbours are getting worked up because Mr Mantei mows the lawn at lunch-time."
+            },
+            "ärgern": {
+              "english": "annoy",
+              "example_de": "Er ärgert seinen Bruder.",
+              "example_en": "He annoys his brother."
+            },
+            "sich ärgern": {
+              "english": "be annoyed",
+              "example_de": "Sie ärgert sich über ihren Chef.",
+              "example_en": "She is annoyed with her boss."
+            },
+            "hassen": {
+              "english": "hate",
+              "example_de": "Ich hasse es, früh aufstehen zu müssen.",
+              "example_en": "I hate having to get up early."
+            },
+            "beleidigen": {
+              "english": "insult",
+              "example_de": "Ich hoffe, ich habe Sie nicht beleidigt.",
+              "example_en": "I hope that I did not insult you."
+            },
+            "stören": {
+              "english": "disturb; disrupt",
+              "example_de": "Der Lärm der startenden und landenden Flugzeuge stört mich.",
+              "example_en": "The noise of the planes taking off and landing disturbs me."
+            },
+            "wehtun": {
+              "english": "hurt",
+              "example_de": "Es tut ihm weh, dass seine Kinder eine schlechte Meinung von ihm haben.",
+              "example_en": "It hurts him that his children have a low opinion of him."
+            },
+            "leiden": {
+              "english": "suffer; have a bad effect on sb / sth",
+              "example_de": "Sie leidet unter der schlechten Atmosphäre in ihrem Büro.",
+              "example_en": "The bad atmosphere in the office has a bad effect on her."
+            },
+            "enttäuschen": {
+              "english": "disappoint",
+              "example_de": "Klar, ich komme – ich möchte Sie ja nicht enttäuschen.",
+              "example_en": "Sure I'll come - I do not want to disappoint you."
+            },
+            "vermissen": {
+              "english": "miss",
+              "example_de": "Sie vermisst ihre Familie.",
+              "example_en": "She misses her family."
+            }
+          },
+          "adjectives": {
+            "unglücklich": {
+              "english": "unhappy",
+              "example_de": "Celia ist über die Scheidung sehr unglücklich.",
+              "example_en": "Celia is very unhappy about the divorce."
+            },
+            "traurig": {
+              "english": "sad",
+              "example_de": "Sie ist traurig, dass ihre Freundin morgen wegfährt.",
+              "example_en": "She is sad that her friend is leaving tomorrow."
+            },
+            "aufgeregt": {
+              "english": "excited, nervous",
+              "example_de": "Bist du aufgeregt?",
+              "example_en": "Are you excited / nervous?"
+            },
+            "aufregend": {
+              "english": "exciting",
+              "example_de": "Unsere Hochzeit war der aufregendste Moment meines Lebens.",
+              "example_en": "Our wedding was the most exciting moment in my life."
+            },
+            "nervös": {
+              "english": "nervous",
+              "example_de": "Vor mündlichen Prüfungen ist Stefan immer sehr nervös.",
+              "example_en": "Stefan is always very nervous before oral exams."
+            },
+            "wütend": {
+              "english": "furious, enraged",
+              "example_de": "Er lief wütend aus dem Zimmer.",
+              "example_en": "He walked out of the room in a rage."
+            },
+            "beleidigt": {
+              "english": "offended",
+              "example_de": "Sei doch nicht so schnell beleidigt!",
+              "example_en": "Do not be so quick to take offence!"
+            },
+            "peinlich": {
+              "english": "embarrassing",
+              "example_de": "Es ist mir sehr peinlich, dass ich Ihren Namen vergessen habe.",
+              "example_en": "It is very embarrassing for me that I have forgotten your name."
+            }
+          },
+          "phrases": {
+            "das Herz schlägt bis zum Hals": {
+              "english": "sb's heart is in their mouth",
+              "example_de": "Als ich ihn sah, schlug mir das Herz bis zum Hals.",
+              "example_en": "My heart was in my mouth when I saw him."
+            },
+            "jemandem auf die Nerven gehen": {
+              "english": "get on sb's nerves",
+              "example_de": "Der Verkehrslärm geht mir auf die Nerven.",
+              "example_en": "The traffic noise gets on my nerves."
+            },
+            "sauer sein": {
+              "english": "be cross",
+              "example_de": "Ich bin wirklich sauer auf dich.",
+              "example_en": "I am really cross with you."
+            },
+            "auf jemanden böse sein": {
+              "english": "be angry / cross with sb",
+              "example_de": "Sie ist böse auf ihre Tochter, weil sie ihre Hausaufgaben nicht gemacht hat.",
+              "example_en": "She is angry with her daughter because she did not do her homework."
+            },
+            "ein schlechtes Gewissen haben": {
+              "english": "have a bad conscience",
+              "example_de": "Ich habe ein ganz schlechtes Gewissen, weil ich mich so lange nicht bei dir gemeldet habe.",
+              "example_en": "I have a really bad conscience because I did not call you for a long time."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Mental abilities",
+      "sets": [
+        {
+          "id": "set5.1",
+          "name": "Thinking and understanding",
+          "description": "Vocabulary related to cognitive processes like thinking, understanding, and having ideas.",
+          "nouns": {
+            "Intelligenz": {
+              "article": "die",
+              "english": "intelligence",
+              "example_de": "Es gibt viele Tests, um Intelligenz zu messen.",
+              "example_en": "There are many tests to measure intelligence."
+            },
+            "Gedanke": {
+              "article": "der",
+              "english": "thought, idea",
+              "example_de": "Der Gedanke an meine Operation macht mir Angst.",
+              "example_en": "The thought of my operation frightens me."
+            },
+            "Idee": {
+              "article": "die",
+              "english": "idea",
+              "example_de": "Hast du schon eine Idee, was wir am Wochenende machen könnten?",
+              "example_en": "Do you have an idea what we could do at the weekend?"
+            },
+            "Einfall": {
+              "article": "der",
+              "english": "idea",
+              "example_de": "Christian hatte den Einfall, dass wir schwimmen gehen könnten.",
+              "example_en": "Christian had the idea of us going swimming."
+            },
+            "Interesse": {
+              "article": "das",
+              "english": "interest",
+              "example_de": "Sein Freund hat wenig Interesse an Kunst.",
+              "example_en": "Art is of little interest to his friend."
+            }
+          },
+          "verbs": {
+            "denken": {
+              "english": "think (mental activity)",
+              "example_de": "Logisches Denken war noch nie meine Stärke.",
+              "example_en": "Logical thinking never was my strong point."
+            },
+            "einfallen": {
+              "english": "remember",
+              "example_de": "Katrin ist gerade eingefallen, dass sie noch einen anderen Termin hat.",
+              "example_en": "Katrin has just remembered that she has another appointment as well."
+            },
+            "realisieren": {
+              "english": "realize",
+              "example_de": "Ich habe erst später realisiert, dass er eine neue Brille trägt.",
+              "example_en": "It was only later that I realised he has new glasses."
+            },
+            "nachdenken": {
+              "english": "think (about)",
+              "example_de": "Das ist ein echtes Problem - darüber muss ich erst einmal in Ruhe nachdenken.",
+              "example_en": "That's a real problem - I'll need some time to think about it."
+            },
+            "sich überlegen": {
+              "english": "consider, think about",
+              "example_de": "Willst du morgen zum Paragliding mitkommen? - Weiß nicht, das muss ich mir erst noch überlegen.",
+              "example_en": "Would you like to come with me to the paragliding course? - I don't know, I'll have to think about it."
+            },
+            "planen": {
+              "english": "plan",
+              "example_de": "Stefan plant alles ganz genau.",
+              "example_en": "Stefan plans everything very carefully."
+            },
+            "sich beschäftigen": {
+              "english": "occupy oneself, busy oneself",
+              "example_de": "Carolo beschäftigt sich schon lange mit philosophischen Fragen.",
+              "example_en": "Carolo has been occupying himself with philosophical questions for a long time."
+            },
+            "sich konzentrieren": {
+              "english": "concentrate",
+              "example_de": "Kinder, seid ruhig. Papa muss arbeiten und sich konzentrieren.",
+              "example_en": "Children, please be quiet. Dad has to concentrate on his work."
+            },
+            "sich interessieren": {
+              "english": "be interested",
+              "example_de": "Ich interessiere mich brennend für die Neurowissenschaften.",
+              "example_en": "I am incredibly interested in neuroscience."
+            }
+          },
+          "adjectives": {
+            "intelligent": {
+              "english": "intelligent",
+              "example_de": "Meine Schwester ist sehr intelligent.",
+              "example_en": "My sister is very intelligent."
+            },
+            "interessiert": {
+              "english": "interested",
+              "example_de": "Marina ist an Astrologie interessiert.",
+              "example_en": "Marina is interested in astrology."
+            }
+          },
+          "phrases": {
+            "in Gedanken versunken sein": {
+              "english": "be lost in contemplation"
+            },
+            "auf eine Idee kommen": {
+              "english": "come up with an idea",
+              "example_de": "Auf diese Idee wäre ich nie gekommen!",
+              "example_en": "I would never have come up with this idea!"
+            }
+          }
+        },
+        {
+          "id": "set5.2",
+          "name": "Deciding and knowing",
+          "description": "Vocabulary related to making decisions, knowledge, memory, and understanding.",
+          "nouns": {
+            "Erinnerung": {
+              "article": "die",
+              "english": "memory",
+              "example_de": "Die meisten Menschen haben keine Erinnerungen an die Zeit, als sie noch Baby waren.",
+              "example_en": "Most people have no memory of the time when they were still a baby."
+            },
+            "Verständnis": { "article": "das", "english": "understanding" },
+            "Vergleich": {
+              "article": "der",
+              "english": "comparison",
+              "example_de": "Im Vergleich zu gestern ist die Situation heute viel besser.",
+              "example_en": "Compared with yesterday, the situation today is far better."
+            },
+            "Entscheidung": {
+              "article": "die",
+              "english": "decision",
+              "example_de": "Es fällt mir schwer, eine Entscheidung zu treffen.",
+              "example_en": "I'm finding it hard to make a decision."
+            },
+            "Wissen": {
+              "article": "das",
+              "english": "knowledge",
+              "example_de": "Die Frau hat ein enormes Wissen über Pferde.",
+              "example_en": "The woman has a vast knowledge of horses."
+            },
+            "Erfahrung": {
+              "article": "die",
+              "english": "experience; routine",
+              "example_de": "Sie weiß aus Erfahrung, dass es bei diesem Thema immer Ärger gibt.",
+              "example_en": "She knows from experience that there is always trouble with this topic."
+            },
+            "Ahnung": {
+              "article": "die",
+              "english": "idea, clue",
+              "example_de": "Weißt du, wo meine Handschuhe sind? - Keine Ahnung.",
+              "example_en": "Do you know where my gloves are? - I haven't a clue."
+            },
+            "Erfindung": {
+              "article": "die",
+              "english": "invention",
+              "example_de": "Die Erfindung des Internets ist eine digitale Revolution.",
+              "example_en": "The invention of the Internet is a digital Revolution."
+            },
+            "Erfinder": { "article": "der", "english": "inventor" }
+          },
+          "verbs": {
+            "erinnern": {
+              "english": "remind",
+              "example_de": "Erinnern Sie meine Tochter daran, die Hausaufgaben zu machen.",
+              "example_en": "Remind my daughter to do her homework."
+            },
+            "sich erinnern": {
+              "english": "remember",
+              "example_de": "Erinnerst du dich an Toms Unfall?",
+              "example_en": "Do you remember Tom's accident?"
+            },
+            "vergleichen": {
+              "english": "compare",
+              "example_de": "Er vergleicht die Situation A mit der Situation B.",
+              "example_en": "He compares situation A with situation B."
+            },
+            "analysieren": {
+              "english": "analyse (BE), analyze (AE)",
+              "example_de": "Bevor wir eine Strategie für die Zukunft entwickeln, müssen wir die gegenwärtige Situation analysieren.",
+              "example_en": "We must analyse the present situation before we develop a strategy for the future."
+            },
+            "rechnen": {
+              "english": "calculate",
+              "example_de": "Das Rechnen fällt Sarah leicht.",
+              "example_en": "Sarah finds calculating easy."
+            },
+            "verstehen": {
+              "english": "understand",
+              "example_de": "Haben Sie die Frage verstanden?",
+              "example_en": "Did you understand the question?"
+            },
+            "erkennen": {
+              "english": "realise; recognize",
+              "example_de": "Er hat erkannt, dass er einen Fehler gemacht hat.",
+              "example_en": "He realised that he had made a mistake."
+            },
+            "sich entscheiden": {
+              "english": "decide",
+              "example_de": "Ich kann mich einfach nicht entscheiden: Beide Angebote sind interessant.",
+              "example_en": "I simply cannot decide: Both offers are interesting."
+            },
+            "irren": {
+              "english": "be wrong about",
+              "example_de": "Ich habe mich im Datum geirrt.",
+              "example_en": "I was wrong about the date."
+            },
+            "verwechseln": {
+              "english": "mix up",
+              "example_de": "An der Garderobe sind zwei Mäntel verwechselt worden.",
+              "example_en": "Two coats got mixed up in the cloakroom."
+            },
+            "wissen": {
+              "english": "know",
+              "example_de": "Man kann meinen Onkel alles fragen, er weiß alles.",
+              "example_en": "You can ask my uncle anything, he knows everything."
+            },
+            "sich merken": {
+              "english": "remember",
+              "example_de": "Ich kann mir seinen Namen einfach nicht merken.",
+              "example_en": "I simply cannot remember his name."
+            },
+            "vergessen": {
+              "english": "forget",
+              "example_de": "Ich habe Sabines Geburtstag vergessen.",
+              "example_en": "I forgot Sabine's birthday."
+            },
+            "erfinden": {
+              "english": "invent",
+              "example_de": "1873 erfand Levi Strauss die Jeans.",
+              "example_en": "Levi Strauss invented jeans in 1873."
+            }
+          },
+          "adjectives": {
+            "verständlich": {
+              "english": "clear, comprehensible",
+              "example_de": "Was meinst du? Ist das so verständlich genug?",
+              "example_en": "What do you mean? Is that clear enough?"
+            },
+            "klug": {
+              "english": "clever, intelligent",
+              "example_de": "Sandra ist eine kluge Person.",
+              "example_en": "Sandra is a clever person."
+            },
+            "dumm": {
+              "english": "stupid; silly",
+              "example_de": "Das war wirklich eine dumme Idee.",
+              "example_en": "This was really a silly idea."
+            }
+          },
+          "phrases": {
+            "etwas in Erinnerung behalten": {
+              "english": "carry the memory of sth (with one)"
+            },
+            "einen Entschluss fassen": {
+              "english": "make a decision",
+              "example_de": "Sie hat den Entschluss gefasst, ihren Mann zu verlassen.",
+              "example_en": "She made the decision to leave her husband."
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

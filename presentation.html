@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lern-Symphonie | Presentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-bg': '#FFFFFF',
+                        'brand-surface': '#F8F9FA',
+                        'brand-primary': '#212529',
+                        'brand-secondary': '#6C757D',
+                        'brand-accent': '#0D6EFD',
+                        'brand-dark': '#000000',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    transitionProperty: {
+                        'opacity': 'opacity',
+                        'transform': 'transform',
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .slide {
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        .slide.hidden {
+            opacity: 0;
+            transform: scale(0.98);
+            pointer-events: none;
+            position: absolute;
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+    </style>
+</head>
+<body class="bg-brand-bg text-brand-primary">
+
+    <!-- Progress Bar -->
+    <div class="fixed top-0 left-0 w-full h-1.5 z-50 bg-gray-200">
+        <div id="progress-bar" class="h-full bg-brand-accent transition-all duration-300"></div>
+    </div>
+
+    <main>
+        <!-- Slide 1: Title Slide -->
+        <section class="slide flex flex-col items-center justify-center h-screen w-screen p-8 text-center">
+            <h1 class="text-7xl font-bold text-brand-primary">Lern-Symphonie</h1>
+            <p class="mt-4 text-2xl text-brand-secondary">Your Personal German Vocabulary Trainer</p>
+            <p class="mt-12 text-gray-400">Use Arrow Keys or on-screen buttons to navigate</p>
+        </section>
+
+        <!-- Slide 2: The Challenge -->
+        <section class="slide hidden flex flex-col items-center justify-center h-screen w-screen p-8 bg-brand-surface">
+            <div class="text-center max-w-5xl">
+                <h2 class="text-4xl font-light text-brand-primary">The Challenge of Learning German</h2>
+                <p class="mt-4 text-lg text-brand-secondary">Learners face common hurdles, especially with German.</p>
+                <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+                    <div class="bg-white p-6 rounded-lg shadow-md"><h3 class="text-xl font-semibold">Vocabulary Overload</h3><p class="mt-2 text-sm text-brand-secondary">Organizing thousands of words.</p></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md"><h3 class="text-xl font-semibold">The Gender Puzzle</h3><p class="mt-2 text-sm text-brand-secondary">Remembering Der, Die, or Das.</p></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md"><h3 class="text-xl font-semibold">Passive vs. Active</h3><p class="mt-2 text-sm text-brand-secondary">From recognizing to using words.</p></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md"><h3 class="text-xl font-semibold">Maintaining Motivation</h3><p class="mt-2 text-sm text-brand-secondary">Avoiding repetitive, boring drills.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: Our Solution -->
+        <section class="slide hidden flex flex-col items-center justify-center h-screen w-screen p-8">
+            <div class="text-center max-w-5xl">
+                <h2 class="text-4xl font-light text-brand-primary">Our Solution: A Multi-Faceted Approach</h2>
+                <p class="mt-4 text-lg text-brand-secondary">To provide tools to not just <strong class="font-semibold">memorize</strong>, but to <strong class="font-semibold">master</strong> vocabulary.</p>
+                <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+                    <div class="p-6 text-center"><h3 class="text-xl font-semibold">Structured Learning</h3><p class="mt-2 text-brand-secondary">Vocabulary organized into logical, thematic sets.</p></div>
+                    <div class="p-6 text-center"><h3 class="text-xl font-semibold">Interactive Practice</h3><p class="mt-2 text-brand-secondary">Gamified exercises make practice engaging and effective.</p></div>
+                    <div class="p-6 text-center"><h3 class="text-xl font-semibold">Targeted Review</h3><p class="mt-2 text-brand-secondary">The app focuses user effort directly on their weak points.</p></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Slide 4: Features -->
+        <section class="slide hidden flex flex-col items-center justify-center h-screen w-screen p-8 bg-brand-surface">
+             <div class="text-center max-w-5xl w-full">
+                <h2 class="text-4xl font-light text-brand-primary">Core Features Explored</h2>
+                <div class="mt-8 w-full">
+                    <div class="flex justify-center border-b border-gray-200 -mb-px">
+                        <button class="tab-button active text-brand-accent border-brand-accent whitespace-nowrap py-4 px-6 border-b-2 font-semibold text-base" data-target="tab1">Thematic Sets</button>
+                        <button class="tab-button text-brand-secondary hover:text-brand-primary hover:border-gray-400 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-base" data-target="tab2">Flash Cards</button>
+                        <button class="tab-button text-brand-secondary hover:text-brand-primary hover:border-gray-400 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-base" data-target="tab3">"Der Die Das" Game</button>
+                        <button class="tab-button text-brand-secondary hover:text-brand-primary hover:border-gray-400 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-base" data-target="tab4">Set Overview</button>
+                        <button class="tab-button text-brand-secondary hover:text-brand-primary hover:border-gray-400 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-base" data-target="tab5">Intelligent Practice</button>
+                    </div>
+                    <div class="mt-8 bg-white rounded-xl shadow-lg p-8 text-left">
+                        <div id="tab1" class="tab-content active"><h3 class="text-2xl font-semibold text-brand-primary">Thematic Vocabulary Sets</h3><p class="mt-4 text-brand-secondary">The app's foundation. Vocabulary is grouped by topic for logical, context-based learning.</p><ul class="list-disc list-inside mt-4 space-y-1 text-brand-secondary"><li>Reduces Cognitive Load</li><li>Provides Context</li><li>Gives a clear, structured learning path.</li></ul></div>
+                        <div id="tab2" class="tab-content"><h3 class="text-2xl font-semibold text-brand-primary">Interactive Flash Cards</h3><p class="mt-4 text-brand-secondary">A classic tool with self-assessment. Users flip cards and mark if they were right or wrong.</p><ul class="list-disc list-inside mt-4 space-y-1 text-brand-secondary"><li><strong class="font-medium text-brand-primary">Active Recall:</strong> Effortful retrieval strengthens memory dramatically.</li><li><strong class="font-medium text-brand-primary">Self-Assessment:</strong> Encourages honesty about one's knowledge level.</li></ul></div>
+                        <div id="tab3" class="tab-content"><h3 class="text-2xl font-semibold text-brand-primary">The "Der Die Das" Game</h3><p class="mt-4 text-brand-secondary">A fast-paced game where users quickly select the correct article, receiving immediate visual feedback.</p><ul class="list-disc list-inside mt-4 space-y-1 text-brand-secondary"><li><strong class="font-medium text-brand-primary">Builds Instinct (Gamification):</strong> Turns a difficult rule into a fun, reflex-based exercise.</li><li><strong class="font-medium text-brand-primary">Targets a Key Weakness:</strong> Directly addresses the most common German hurdle.</li></ul></div>
+                        <div id="tab4" class="tab-content"><h3 class="text-2xl font-semibold text-brand-primary">Comprehensive Set Overview</h3><p class="mt-4 text-brand-secondary">A dedicated page with every word, translation, full example sentences, and Text-to-Speech (TTS) pronunciation.</p><ul class="list-disc list-inside mt-4 space-y-1 text-brand-secondary"><li><strong class="font-medium text-brand-primary">Multi-Sensory Learning:</strong> Engages visual and auditory senses for better memory.</li><li><strong class="font-medium text-brand-primary">Learning in Context:</strong> Shows how words are used in real sentences.</li></ul></div>
+                        <div id="tab5" class="tab-content"><h3 class="text-2xl font-semibold text-brand-primary">Intelligent, Mistake-Focused Practice</h3><p class="mt-4 text-brand-secondary"><strong class="font-medium text-brand-primary">AI Sentence Practice:</strong> Users form their own sentences and receive personalized grammar feedback from an AI "teacher".</p><p class="mt-4 text-brand-secondary"><strong class="font-medium text-brand-primary">Repeat Wrong Cards:</strong> The app lets users instantly start a new round with only the words they got wrong.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: The Learning Loop -->
+        <section class="slide hidden flex flex-col items-center justify-center h-screen w-screen p-8">
+            <div class="text-center max-w-6xl w-full">
+                <h2 class="text-4xl font-light text-brand-primary">The Learning Loop</h2>
+                <p class="mt-4 text-lg text-brand-secondary">A cyclical process to ensure mastery.</p>
+                <div class="mt-16 flex flex-col md:flex-row items-stretch justify-center gap-y-8 md:gap-x-0">
+                    <div class="bg-white rounded-lg shadow-md p-6 w-full md:w-52 text-center flex flex-col justify-center"><h3 class="font-semibold text-brand-primary">1. Discover</h3><p class="text-sm text-brand-secondary mt-1">Select a set</p></div>
+                    <div class="flex items-center justify-center text-3xl text-gray-300 px-4 transform rotate-90 md:rotate-0">→</div>
+                    <div class="bg-white rounded-lg shadow-md p-6 w-full md:w-52 text-center flex flex-col justify-center"><h3 class="font-semibold text-brand-primary">2. Learn</h3><p class="text-sm text-brand-secondary mt-1">Flash Cards & Overview</p></div>
+                    <div class="flex items-center justify-center text-3xl text-gray-300 px-4 transform rotate-90 md:rotate-0">→</div>
+                    <div class="bg-white rounded-lg shadow-md p-6 w-full md:w-52 text-center flex flex-col justify-center"><h3 class="font-semibold text-brand-primary">3. Apply</h3><p class="text-sm text-brand-secondary mt-1">Play games & practice</p></div>
+                    <div class="flex items-center justify-center text-3xl text-gray-300 px-4 transform rotate-90 md:rotate-0">→</div>
+                    <div class="bg-white rounded-lg shadow-md p-6 w-full md:w-52 text-center flex flex-col justify-center"><h3 class="font-semibold text-brand-primary">4. Identify</h3><p class="text-sm text-brand-secondary mt-1">Track weak spots</p></div>
+                    <div class="flex items-center justify-center text-3xl text-gray-300 px-4 transform rotate-90 md:rotate-0">→</div>
+                    <div class="bg-white rounded-lg shadow-md p-6 w-full md:w-52 text-center flex flex-col justify-center"><h3 class="font-semibold text-brand-primary">5. Reinforce</h3><p class="text-sm text-brand-secondary mt-1">Repeat incorrect words</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: Roadmap -->
+        <section class="slide hidden flex flex-col items-center justify-center h-screen w-screen p-8 bg-brand-surface">
+            <div class="text-center max-w-5xl w-full">
+                <h2 class="text-4xl font-light text-brand-primary">Summary & Future Roadmap</h2>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <h3 class="text-2xl font-semibold text-brand-primary">Implemented MVP</h3>
+                        <ul class="list-disc list-inside mt-4 space-y-2 text-brand-secondary">
+                            <li>Robust core tools for vocabulary & gender practice.</li>
+                            <li>Clean, user-friendly interface.</li>
+                            <li>Intelligent mistake tracking & AI sentence correction.</li>
+                            <li>State persistence for a seamless experience.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 border border-brand-accent">
+                        <h3 class="text-2xl font-semibold text-brand-primary">What's Next</h3>
+                        <ul class="list-disc list-inside mt-4 space-y-2 text-brand-secondary">
+                            <li><strong class="font-medium text-brand-primary">Spaced Repetition System (SRS)</strong></li>
+                            <li><strong class="font-medium text-brand-primary">User-Created Content & Sharing</strong></li>
+                            <li><strong class="font-medium text-brand-primary">Expanded Exercises (Plurals, Verbs)</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 7: Thank You -->
+        <section class="slide hidden flex flex-col items-center justify-center h-screen w-screen p-8">
+            <div class="text-center">
+                <h2 class="text-6xl font-bold text-brand-primary">Thank You</h2>
+                <p class="mt-4 text-2xl text-brand-secondary">Questions?</p>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Navigation Controls -->
+    <div class="fixed bottom-0 left-0 w-full bg-white/80 backdrop-blur-sm border-t border-gray-200">
+        <div class="max-w-7xl mx-auto flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
+            <button id="prev-btn" class="p-2 rounded-full hover:bg-gray-200 transition-colors">
+                <svg class="w-6 h-6 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            </button>
+            <div class="text-sm font-medium text-brand-secondary">
+                Slide <span id="current-slide">1</span> of <span id="total-slides">7</span>
+            </div>
+            <button id="next-btn" class="p-2 rounded-full hover:bg-gray-200 transition-colors">
+                <svg class="w-6 h-6 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- SLIDESHOW LOGIC ---
+            const slides = document.querySelectorAll('.slide');
+            const progressBar = document.getElementById('progress-bar');
+            const currentSlideEl = document.getElementById('current-slide');
+            const totalSlidesEl = document.getElementById('total-slides');
+            const prevButton = document.getElementById('prev-btn');
+            const nextButton = document.getElementById('next-btn');
+            
+            let currentSlideIndex = 0;
+            const totalSlides = slides.length;
+
+            function showSlide(index) {
+                // Hide all slides
+                slides.forEach((slide, i) => {
+                    slide.classList.add('hidden');
+                });
+
+                // Show the target slide
+                if (slides[index]) {
+                    slides[index].classList.remove('hidden');
+                }
+
+                // Update UI elements
+                currentSlideEl.textContent = index + 1;
+                const progress = ((index + 1) / totalSlides) * 100;
+                progressBar.style.width = `${progress}%`;
+                
+                // Disable/Enable buttons
+                prevButton.disabled = index === 0;
+                nextButton.disabled = index === totalSlides - 1;
+                prevButton.classList.toggle('opacity-50', index === 0);
+                nextButton.classList.toggle('opacity-50', index === totalSlides - 1);
+            }
+
+            function showNextSlide() {
+                if (currentSlideIndex < totalSlides - 1) {
+                    currentSlideIndex++;
+                    showSlide(currentSlideIndex);
+                }
+            }
+
+            function showPrevSlide() {
+                if (currentSlideIndex > 0) {
+                    currentSlideIndex--;
+                    showSlide(currentSlideIndex);
+                }
+            }
+            
+            // Initial setup
+            totalSlidesEl.textContent = totalSlides;
+            showSlide(currentSlideIndex);
+
+            // Event Listeners
+            nextButton.addEventListener('click', showNextSlide);
+            prevButton.addEventListener('click', showPrevSlide);
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'ArrowRight') showNextSlide();
+                if (event.key === 'ArrowLeft') showPrevSlide();
+            });
+
+            // --- TAB LOGIC (FOR FEATURES SLIDE) ---
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetId = button.dataset.target;
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('active', 'text-brand-accent', 'border-brand-accent');
+                        btn.classList.add('text-brand-secondary', 'hover:text-brand-primary', 'hover:border-gray-400');
+                    });
+                    button.classList.add('active', 'text-brand-accent', 'border-brand-accent');
+                    button.classList.remove('text-brand-secondary');
+                    tabContents.forEach(content => {
+                        content.classList.toggle('active', content.id === targetId);
+                    });
+                });
+            });
+
+            // --- MOBILE MENU LOGIC ---
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (menuButton) { menuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden')); }
+            mobileMenu.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => mobileMenu.classList.add('hidden')); });
+        });
+    </script>
+</body>
+</html>

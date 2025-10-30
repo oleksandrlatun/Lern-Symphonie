@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lern-Symphonie | Choose Your Set</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <img src="logo-cropped.png" height="100px">
+        </header>
+
+        <main class="main-layout">
+            <div class="selection-panel">
+                <h2>1. Choose a Theme</h2>
+                <div id="themesContainer">
+                    <p>Loading themes...</p>
+                </div>
+            </div>
+
+            <aside class="sidebar" id="wordsPanel">
+                <div class="sidebar-content-initial" id="welcome-block">
+                     <h2>2. Review & Start</h2>
+                    <p>Select a set from the left to see the words and begin your training session.</p>
+                </div>
+                <div id="setWordListContainer" style="display: none;">
+                    <div id="setWordList"></div>
+                    <div id="trainingButtons">
+                        <button id="overviewBtn" class="btn btn-secondary">View Overview</button>
+                        <button id="flashCardGo" class="btn btn-primary">Train with Flash Cards</button>
+                        <button id="derDieDasBtn" class="btn btn-primary">Practice Articles</button>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="display-vocab.js"></script>
+</body>
+</html>
