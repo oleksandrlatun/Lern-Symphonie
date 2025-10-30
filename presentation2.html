@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lern-Symphonie | Presentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-bg': '#FFFFFF',
+                        'brand-surface': '#F8F9FA',
+                        'brand-primary': '#212529',
+                        'brand-secondary': '#6C757D',
+                        // Vibrant palette
+                        'accent-blue': '#0D6EFD',
+                        'accent-teal': '#20c997',
+                        'accent-orange': '#fd7e14',
+                        'accent-purple': '#6f42c1',
+                        'accent-pink': '#d63384',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    transitionProperty: {
+                        'opacity': 'opacity',
+                        'transform': 'transform',
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .slide {
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        .slide.hidden {
+            opacity: 0;
+            transform: scale(0.98);
+            pointer-events: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: flex; } /* Changed to flex for alignment */
+    </style>
+</head>
+<body class="bg-brand-bg text-brand-primary">
+
+    <!-- Progress Bar -->
+    <div class="fixed top-0 left-0 w-full h-1.5 z-50 bg-gray-200">
+        <div id="progress-bar" class="h-full bg-accent-blue transition-all duration-300"></div>
+    </div>
+
+    <main>
+        <!-- Slide 1: Title Slide -->
+        <section class="slide flex flex-col items-center justify-center h-screen w-screen p-8 text-center bg-gray-800 text-white">
+            <div class="absolute inset-0">
+                <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=2573&auto=format&fit=crop" class="w-full h-full object-cover" alt="Modern learning environment">
+                <div class="absolute inset-0 bg-black/60"></div>
+            </div>
+            <div class="relative">
+                <h1 class="text-7xl font-bold">Lern-Symphonie</h1>
+                <p class="mt-4 text-2xl text-gray-200">Your Personal German Vocabulary Trainer</p>
+                <p class="mt-12 text-gray-400">Use Arrow Keys or on-screen buttons to navigate</p>
+            </div>
+        </section>
+
+        <!-- Slide 2: The Challenge -->
+        <section class="slide hidden flex flex-col items-center justify-center h-screen w-screen p-8 bg-brand-surface">
+            <div class="text-center max-w-5xl">
+                <h2 class="text-4xl font-light text-brand-primary">The Challenge of Learning German</h2>
+                <p class="mt-4 text-lg text-brand-secondary">Learners face common hurdles, especially with German.</p>
+                <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center"><div class="w-12 h-12 mx-auto mb-4 text-accent-blue"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg></div><h3 class="text-xl font-semibold">Vocabulary Overload</h3><p class="mt-2 text-sm text-brand-secondary">Organizing thousands of words.</p></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center"><div class="w-12 h-12 mx-auto mb-4 text-accent-orange"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" /></svg></div><h3 class="text-xl font-semibold">The Gender Puzzle</h3><p class="mt-2 text-sm text-brand-secondary">Remembering Der, Die, or Das.</p></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center"><div class="w-12 h-12 mx-auto mb-4 text-accent-purple"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 20H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 2V3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 12L21 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 12L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.3639 5.63604L17.6568 6.34315" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.34315 17.6568L5.63604 18.3639" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.3639 18.3639L17.6568 17.6568" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.34315 6.34315L5.63604 5.63604" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.9998 14C15.3998 12.3 14.5998 11.5 13.5998 11C12.5998 10.5 11.4003 10.5 10.4003 11C9.40034 11.5 8.60034 12.3 9.00034 14C9.50034 16.1 14.5003 16.1 15.0003 14H14.9998Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 16.5C9.3 17.6 10.5 18.5 12 18.5C13.5 18.5 14.7 17.6 15 16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3 class="text-xl font-semibold">Recognition vs. Recall</h3><p class="mt-2 text-sm text-brand-secondary">From understanding a word to using it with confidence.</p></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center"><div class="w-12 h-12 mx-auto mb-4 text-accent-pink"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048l5.962-5.962a8.25 8.25 0 013.362 4.128zM12 9.75a2.25 2.25 0 110 4.5 2.25 2.25 0 010-4.5z" /></svg></div><h3 class="text-xl font-semibold">Maintaining Motivation</h3><p class="mt-2 text-sm text-brand-secondary">Avoiding repetitive, boring drills.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: My Solution -->
+        <section class="slide hidden flex flex-col items-center justify-center h-screen w-screen p-8">
+            <div class="text-center max-w-5xl">
+                <h2 class="text-4xl font-light text-brand-primary">My Solution: A Multi-Faceted Approach</h2>
+                <p class="mt-4 text-lg text-brand-secondary">To provide tools to not just <strong class="font-semibold">memorize</strong>, but to <strong class="font-semibold">master</strong> vocabulary.</p>
+                <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+                    <div class="p-6 text-center"><div class="w-16 h-16 mx-auto mb-4 text-accent-blue"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" /></svg></div><h3 class="text-xl font-semibold">Structured Learning</h3><p class="mt-2 text-brand-secondary">Vocabulary organized into logical, thematic sets.</p></div>
+                    <div class="p-6 text-center"><div class="w-16 h-16 mx-auto mb-4 text-accent-teal"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" /></svg></div><h3 class="text-xl font-semibold">Interactive Practice</h3><p class="mt-2 text-brand-secondary">Gamified exercises make practice engaging and effective.</p></div>
+                    <div class="p-6 text-center"><div class="w-16 h-16 mx-auto mb-4 text-accent-purple"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div><h3 class="text-xl font-semibold">Targeted Review</h3><p class="mt-2 text-brand-secondary">The app focuses user effort directly on their weak points.</p></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Slide 4: Features -->
+        <section class="slide hidden flex flex-col items-center justify-center h-screen w-screen p-4 md:p-8 bg-brand-surface">
+             <div class="text-center max-w-4xl w-full">
+                <h2 class="text-4xl font-light text-brand-primary">Core Features Explored</h2>
+                <div class="mt-8 w-full">
+                    <div class="flex flex-wrap justify-center border-b border-gray-200 -mb-px">
+                        <button class="tab-button active flex items-center text-accent-blue border-accent-blue whitespace-nowrap py-3 px-4 sm:px-5 border-b-2 font-semibold text-sm md:text-base" data-target="tab1">Thematic Sets</button>
+                        <button class="tab-button text-brand-secondary hover:text-brand-primary hover:border-gray-400 whitespace-nowrap py-3 px-4 sm:px-5 border-b-2 font-medium text-sm md:text-base" data-target="tab2">Flash Cards</button>
+                        <button class="tab-button text-brand-secondary hover:text-brand-primary hover:border-gray-400 whitespace-nowrap py-3 px-4 sm:px-5 border-b-2 font-medium text-sm md:text-base" data-target="tab3">Der Die Das</button>
+                        <button class="tab-button text-brand-secondary hover:text-brand-primary hover:border-gray-400 whitespace-nowrap py-3 px-4 sm:px-5 border-b-2 font-medium text-sm md:text-base" data-target="tab4">Set Overview</button>
+                        <button class="tab-button text-brand-secondary hover:text-brand-primary hover:border-gray-400 whitespace-nowrap py-3 px-4 sm:px-5 border-b-2 font-medium text-sm md:text-base" data-target="tab5">Intelligent Practice</button>
+                    </div>
+                    <div class="mt-6 bg-white rounded-xl shadow-lg p-6 text-left min-h-[300px]">
+                        <div id="tab1" class="tab-content active flex-col md:flex-row gap-6 items-center"><div class="flex-shrink-0 w-24 h-24 text-accent-blue"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" /></svg></div><div><h3 class="text-xl font-semibold text-brand-primary">Thematic Vocabulary Sets</h3><p class="mt-2 text-brand-secondary">Vocabulary is grouped by topic for logical, context-based learning.</p><ul class="list-disc list-inside mt-2 space-y-1 text-brand-secondary text-sm"><li>Reduces Cognitive Load</li><li>Provides Context</li><li>Gives a structured learning path.</li></ul></div></div>
+                        <div id="tab2" class="tab-content flex-col md:flex-row gap-6 items-center"><div class="flex-shrink-0 w-24 h-24 text-accent-teal"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div><div><h3 class="text-xl font-semibold text-brand-primary">Interactive Flash Cards</h3><p class="mt-2 text-brand-secondary">A classic tool with a crucial addition: self-assessment. Users flip cards and mark if they were right or wrong.</p><ul class="list-disc list-inside mt-2 space-y-1 text-brand-secondary text-sm"><li><strong class="font-medium">Active Recall:</strong> Effortful retrieval strengthens memory dramatically.</li><li><strong class="font-medium">Self-Assessment:</strong> Encourages honesty about one's knowledge level.</li></ul></div></div>
+                        <div id="tab3" class="tab-content flex-col md:flex-row gap-6 items-center"><div class="flex-shrink-0 w-24 h-24 text-accent-orange"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg></div><div><h3 class="text-xl font-semibold text-brand-primary">The "Der Die Das" Game</h3><p class="mt-2 text-brand-secondary">A fast-paced game where users quickly select the correct article, receiving immediate visual feedback.</p><ul class="list-disc list-inside mt-2 space-y-1 text-brand-secondary text-sm"><li><strong class="font-medium">Builds Instinct (Gamification):</strong> Turns a difficult rule into a fun, reflex-based exercise.</li><li><strong class="font-medium">Targets a Key Weakness:</strong> Directly addresses the German gender hurdle.</li></ul></div></div>
+                        <div id="tab4" class="tab-content flex-col md:flex-row gap-6 items-center"><div class="flex-shrink-0 w-24 h-24 text-accent-purple"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l9 7.5" /></svg></div><div><h3 class="text-xl font-semibold text-brand-primary">Comprehensive Set Overview</h3><p class="mt-2 text-brand-secondary">A dedicated page displaying every word, translation, full example sentences, and Text-to-Speech (TTS) pronunciation.</p><ul class="list-disc list-inside mt-2 space-y-1 text-brand-secondary text-sm"><li><strong class="font-medium">Multi-Sensory Learning:</strong> Engages visual and auditory senses.</li><li><strong class="font-medium">Learning in Context:</strong> Shows how words are used in real sentences.</li></ul></div></div>
+                        <div id="tab5" class="tab-content flex-col md:flex-row gap-6 items-center"><div class="flex-shrink-0 w-24 h-24 text-accent-pink"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" /></svg></div><div><h3 class="text-xl font-semibold text-brand-primary">Intelligent, Mistake-Focused Practice</h3><p class="mt-2 text-brand-secondary"><strong class="font-medium">AI Sentence Practice:</strong> Users form their own sentences and receive personalized grammar feedback.</p><p class="mt-2 text-brand-secondary"><strong class="font-medium">Repeat Wrong Cards:</strong> Users can instantly start a new round with only the words they got wrong.</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: The Learning Loop -->
+        <section class="slide hidden flex flex-col items-center justify-center h-screen w-screen p-8">
+            <div class="text-center max-w-6xl w-full">
+                <h2 class="text-4xl font-light text-brand-primary">The Learning Loop</h2>
+                <p class="mt-4 text-lg text-brand-secondary">A cyclical process to ensure mastery.</p>
+                <div class="mt-16 flex flex-col md:flex-row items-stretch justify-center gap-y-8 md:gap-x-0">
+                    <div class="bg-white rounded-lg shadow-md p-6 w-full md:w-52 text-center flex flex-col justify-center"><div class="w-10 h-10 mx-auto text-accent-blue"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg></div><h3 class="font-semibold text-brand-primary mt-3">1. Discover</h3><p class="text-sm text-brand-secondary mt-1">Select a thematic set.</p></div>
+                    <div class="flex items-center justify-center text-3xl text-gray-300 px-4 transform rotate-90 md:rotate-0">→</div>
+                    <div class="bg-white rounded-lg shadow-md p-6 w-full md:w-52 text-center flex flex-col justify-center"><div class="w-10 h-10 mx-auto text-accent-teal"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg></div><h3 class="font-semibold text-brand-primary mt-3">2. Learn</h3><p class="text-sm text-brand-secondary mt-1">Flash Cards & Overview.</p></div>
+                    <div class="flex items-center justify-center text-3xl text-gray-300 px-4 transform rotate-90 md:rotate-0">→</div>
+                    <div class="bg-white rounded-lg shadow-md p-6 w-full md:w-52 text-center flex flex-col justify-center"><div class="w-10 h-10 mx-auto text-accent-orange"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" /></svg></div><h3 class="font-semibold text-brand-primary mt-3">3. Apply</h3><p class="text-sm text-brand-secondary mt-1">Play games & practice.</p></div>
+                    <div class="flex items-center justify-center text-3xl text-gray-300 px-4 transform rotate-90 md:rotate-0">→</div>
+                    <div class="bg-white rounded-lg shadow-md p-6 w-full md:w-52 text-center flex flex-col justify-center"><div class="w-10 h-10 mx-auto text-accent-purple"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg></div><h3 class="font-semibold text-brand-primary mt-3">4. Identify</h3><p class="text-sm text-brand-secondary mt-1">Track weak spots.</p></div>
+                    <div class="flex items-center justify-center text-3xl text-gray-300 px-4 transform rotate-90 md:rotate-0">→</div>
+                    <div class="bg-white rounded-lg shadow-md p-6 w-full md:w-52 text-center flex flex-col justify-center"><div class="w-10 h-10 mx-auto text-accent-pink"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3 class="font-semibold text-brand-primary mt-3">5. Reinforce</h3><p class="text-sm text-brand-secondary mt-1">Repeat incorrect words.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: Roadmap -->
+        <section class="slide hidden flex flex-col items-center justify-center h-screen w-screen p-8 bg-brand-surface">
+            <div class="text-center max-w-5xl w-full">
+                <h2 class="text-4xl font-light text-brand-primary">Summary & Future Roadmap</h2>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <h3 class="text-2xl font-semibold text-brand-primary flex items-center"><svg class="w-6 h-6 mr-3 text-green-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>What I've Implemented</h3>
+                        <ul class="list-disc list-inside mt-4 space-y-2 text-brand-secondary">
+                            <li>Robust core tools for vocabulary & gender practice.</li>
+                            <li>Clean, user-friendly interface.</li>
+                            <li>Intelligent mistake tracking & AI sentence correction.</li>
+                            <li>State persistence for a seamless experience.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <h3 class="text-2xl font-semibold text-brand-primary flex items-center"><svg class="w-6 h-6 mr-3 text-accent-blue" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>What's Next</h3>
+                        <ul class="list-disc list-inside mt-4 space-y-2 text-brand-secondary">
+                            <li><strong class="font-medium text-brand-primary">Spaced Repetition System (SRS)</strong></li>
+                            <li><strong class="font-medium text-brand-primary">User-Created Content & Sharing</strong></li>
+                            <li><strong class="font-medium text-brand-primary">Expanded Exercises (Plurals, Verbs)</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 7: Thank You -->
+        <section class="slide hidden flex flex-col items-center justify-center h-screen w-screen p-8">
+            <div class="text-center">
+                 <div class="w-24 h-24 mx-auto text-accent-blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h2 class="mt-8 text-6xl font-bold text-brand-primary">Thank You</h2>
+                <p class="mt-4 text-2xl text-brand-secondary">Questions?</p>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Navigation Controls -->
+    <div class="fixed bottom-0 left-0 w-full bg-white/80 backdrop-blur-sm border-t border-gray-200">
+        <div class="max-w-7xl mx-auto flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
+            <button id="prev-btn" class="p-2 rounded-full hover:bg-gray-200 transition-colors disabled:opacity-50">
+                <svg class="w-6 h-6 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            </button>
+            <div class="text-sm font-medium text-brand-secondary">
+                Slide <span id="current-slide">1</span> of <span id="total-slides">7</span>
+            </div>
+            <button id="next-btn" class="p-2 rounded-full hover:bg-gray-200 transition-colors">
+                <svg class="w-6 h-6 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const progressBar = document.getElementById('progress-bar');
+            const currentSlideEl = document.getElementById('current-slide');
+            const totalSlidesEl = document.getElementById('total-slides');
+            const prevButton = document.getElementById('prev-btn');
+            const nextButton = document.getElementById('next-btn');
+            
+            let currentSlideIndex = 0;
+            const totalSlides = slides.length;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle('hidden', i !== index);
+                });
+                currentSlideEl.textContent = index + 1;
+                progressBar.style.width = `${((index + 1) / totalSlides) * 100}%`;
+                prevButton.disabled = index === 0;
+            }
+
+            function showNextSlide() {
+                if (currentSlideIndex < totalSlides - 1) {
+                    currentSlideIndex++;
+                    showSlide(currentSlideIndex);
+                } else {
+                    window.location.href = 'index.html';
+                }
+            }
+
+            function showPrevSlide() {
+                if (currentSlideIndex > 0) {
+                    currentSlideIndex--;
+                    showSlide(currentSlideIndex);
+                }
+            }
+            
+            totalSlidesEl.textContent = totalSlides;
+            showSlide(currentSlideIndex);
+
+            nextButton.addEventListener('click', showNextSlide);
+            prevButton.addEventListener('click', showPrevSlide);
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'ArrowRight') showNextSlide();
+                if (event.key === 'ArrowLeft') showPrevSlide();
+            });
+
+            // CORRECTED Tab logic
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetId = button.dataset.target;
+                    
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('active', 'text-accent-blue', 'border-accent-blue');
+                        btn.classList.add('text-brand-secondary');
+                    });
+                    
+                    button.classList.add('active', 'text-accent-blue', 'border-accent-blue');
+                    button.classList.remove('text-brand-secondary');
+                    
+                    tabContents.forEach(content => {
+                        content.classList.remove('active');
+                        content.style.display = 'none'; // Explicitly hide all
+                    });
+
+                    const targetContent = document.getElementById(targetId);
+                    if (targetContent) {
+                       targetContent.classList.add('active');
+                       targetContent.style.display = 'flex'; // Use flex to match style
+                    }
+                });
+            });
+
+             // Initialize first tab
+            const firstTab = document.querySelector('.tab-button[data-target="tab1"]');
+            if(firstTab) {
+                firstTab.click();
+            }
+        });
+    </script>
+</body>
+</html>
